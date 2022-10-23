@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Nav from '../components/Nav'
 
 export default function Home() {
   return (
@@ -12,9 +12,7 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <nav className="">
-
-        </nav>
+        <Nav />
         <section id="front">
           <h1 className="text-2xl">
             Wojciech Woźniak
