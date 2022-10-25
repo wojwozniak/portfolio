@@ -5,7 +5,7 @@ import Background from '../components/Background'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="font-sans">
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Wojciech Woźniak's Webdev Portfolio" />
