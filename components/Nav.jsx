@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from 'react-fontawesome'
 
 const Nav = () => {
     const menuItems = [
@@ -11,9 +12,9 @@ const Nav = () => {
   
   return (
     <nav className="absolute right-0 h-full text-right flex items-center">
-        <ul className='flex gap-5 flex-col'>
+      <ul className='flex gap-5 flex-col'>
         {
-          menuItems.map((item) => <li>{item}</li>)
+          menuItems.map((item) => <li className="after:content-['-'] after:m-1.5"><a href="#">{item}</a></li>)
         }
         </ul>
     </nav>

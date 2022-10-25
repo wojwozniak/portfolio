@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Nav from '../components/Nav.jsx'
+import Background from '../components/Background'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className="">
         <Nav />
+        <Background />
         <section id="front">
           <h1 className="text-2xl">
             Wojciech Woźniak
