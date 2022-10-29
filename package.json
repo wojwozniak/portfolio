@@ -14,18 +14,23 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/drei": "^9.37.0",
     "@react-three/fiber": "^8.8.10",
+    "@types/three": "^0.144.0",
     "fontawesome": "^5.6.3",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-fontawesome": "^1.7.1"
+    "react-fontawesome": "^1.7.1",
+    "three": "^0.146.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
+    "@types/node": "18.11.7",
     "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.18",
     "postcss-preset-env": "^7.8.2",
-    "tailwindcss": "^3.2.1"
+    "tailwindcss": "^3.2.1",
+    "typescript": "4.8.4"
   }
 }
