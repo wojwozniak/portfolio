@@ -10,12 +10,12 @@ const Nav = () => {
   ];
   
   return (
-    <nav className="fixed right-10 h-full text-2xl text-right flex items-center">
+    <nav className="fixed right-10 h-full text-3xl text-right flex items-center">
       <ul className='flex gap-5 flex-col'>
         {
           menuItems.map((item) => 
-          <li key={item} className="hover:cursor-pointer flex flex-row gap-5 justify-end">
-            <a href="#title" className="h-full flex align-center justify-end">
+          <li key={item} className="hover:cursor-pointer flex flex-row justify-end">
+            <a href="#title" className="h-full flex align-center gap-2 justify-end">
             {item}
             <span className="material-symbols-outlined translate-y-1">remove</span> 
             </a>
