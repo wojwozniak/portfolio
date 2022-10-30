@@ -4,6 +4,7 @@ import Nav from '../components/Nav.jsx'
 import Background from '../components/Background'
 import TitleSection from '../components/TitleSection'
 import SectionIndicator from '../components/SectionIndicator'
+import AboutSection from '../components/AboutSection'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <SectionIndicator />
         <Background />
         <TitleSection />
+        <AboutSection />
       </main>
 
       <footer className="">
