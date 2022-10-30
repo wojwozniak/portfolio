@@ -14,9 +14,8 @@ const Background = () => {
                         <boxGeometry args={[2, 2, 2]} />
                         <meshPhongMaterial />
                     </mesh>
-                    <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} zoomSpeed={.6} panSpeed={.5} rotateSpeed={.4} />
                     <ambientLight intensity={0.1} />
-                    <directionalLight color="red" position={[0, 0, 5]} />
+                    <directionalLight color="blue" position={[0, 0, 5]} />
             </Suspense>
         </Canvas>
       </div>
