@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <div className="h-screen snap-start">AboutSection</div>
+    <div id="about" className="h-screen snap-start">AboutSection</div>
   )
 }
 

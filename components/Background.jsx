@@ -9,7 +9,7 @@ const Background = () => {
       <div id="canvas-container" className="h-[200vh] w-full absolute">
         <Canvas>
             <Suspense fallback={null}>
-                    <Stars radius={300} depth={60} count={20000} factor={7} saturation={.01} fade={true} />
+                    <Stars radius={300} depth={100} count={30000} factor={9} saturation={.02} fade={true} />
                    {/* <mesh>
                         <boxGeometry args={[2, 2, 2]} />
                         <meshPhongMaterial />
