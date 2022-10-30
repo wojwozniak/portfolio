@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Nav from '../components/Nav.jsx'
 import Background from '../components/Background'
+import TitleSection from '../components/TitleSection'
+import SectionIndicator from '../components/SectionIndicator'
 
 export default function Home() {
   return (
@@ -14,16 +16,13 @@ export default function Home() {
 
       <main className="">
         <Nav />
+        <SectionIndicator />
         <Background />
-        <section id="front">
-          <h1 className="text-2xl">
-            Wojciech Woźniak
-          </h1>
-        </section>
+        <TitleSection />
       </main>
 
       <footer className="">
-
+        <p>Created by wojwozniak using Next.js</p>
       </footer>
     </div>
   )
