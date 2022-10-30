@@ -10,10 +10,11 @@ const Background = () => {
         <Canvas>
             <Suspense fallback={null}>
                     <Stars radius={300} depth={60} count={20000} factor={7} saturation={.01} fade={true} />
-                    <mesh>
+                   {/* <mesh>
                         <boxGeometry args={[2, 2, 2]} />
                         <meshPhongMaterial />
                     </mesh>
+                  */}
                     <ambientLight intensity={0.1} />
                     <directionalLight color="blue" position={[0, 0, 5]} />
             </Suspense>
