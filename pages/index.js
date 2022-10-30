@@ -18,9 +18,12 @@ export default function Home() {
       <main className="">
         <Nav />
         <SectionIndicator />
-        <Background />
-        <TitleSection />
-        <AboutSection />
+        <div id='sections' className='snap-y snap-mandatory overflow-scroll h-[200vh]'>
+          <Background />
+          <TitleSection />
+          <AboutSection />
+        </div>
+        
       </main>
 
       <footer className="">

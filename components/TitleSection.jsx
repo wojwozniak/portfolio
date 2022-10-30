@@ -2,7 +2,7 @@ import React from 'react'
 
 const TitleSection = () => {
   return (
-    <section id="front" className="h-screen">
+    <section id="front" className="h-screen snap-start">
       <div className="absolute top-40 left-20 flex flex-col gap-3">
         <h1 className="text-5xl">
         Wojciech Woźniak
