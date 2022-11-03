@@ -9,12 +9,13 @@ const Nav = () => {
       'work',
       'contact'
   ];
-
+  
   const handleScroll = () => {
     const pos = window.scrollY;
     if(pos != 0) {
       for(let i=0; i<refs.current.length; i++) {
         refs.current[i].style.display = 'none';
+        console.log(pos);
       }
     }
      else {
@@ -32,7 +33,6 @@ const Nav = () => {
       window.removeEventListener('scroll', handleScroll);
     }
   }, []);
-  
   
   return (
     <nav className="fixed right-10 h-full text-3xl text-right flex items-center z-10">

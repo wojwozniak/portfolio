@@ -18,7 +18,7 @@ export default function Home() {
       <main className="">
         <Nav />
         <SectionIndicator />
-        <div id='sections' className='snap-y snap-mandatory overflow-scroll h-[200vh]'>
+        <div id='sections' className='overflow-y-scroll h-[200vh] w-[100vw]'>
           <Background />
           <TitleSection />
           <AboutSection />
