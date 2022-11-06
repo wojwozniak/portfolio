@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="">
-        <p>Created by wojwozniak using Next.js</p>
-      </footer>
+    <footer id="footer">
+      <p>Created by wojwozniak using Three.js and Next.js</p>
+    </footer>
   )
 }
 
