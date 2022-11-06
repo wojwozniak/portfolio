@@ -7,7 +7,7 @@ const AboutSection = () => {
         <h1 className="text-3xl">
         Hi, I'm Wojciech!
         </h1>
-        <p className='text-xl w-[60%]'>I am full stack web developer and computer science student at University of Wroclaw. I love creating things from scratch - that’s why I started my software development journey. Apart of that, I am also a passionate chess & guitar player</p>
+        <p className='text-xl w-[60%]'>I am fullstack developer from Poland. I am studying Computer Science on University of Wroclaw. I love creating things from the scratch. I also play chess quite a lot.</p>
       </div>
     </section>
   )
