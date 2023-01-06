@@ -3,6 +3,7 @@ import Nav from '../components/Nav'
 import Background from '../components/Background'
 import TitleSection from '../components/TitleSection'
 import Footer from '../components/Footer'
+import AboutSection from '../components/AboutSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Background />
         <TitleSection />
         <Nav />
+        <AboutSection />
       </main>
       <Footer />
     </div>
