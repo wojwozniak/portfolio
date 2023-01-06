@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Nav from '../components/Nav'
 import Background from '../components/Background'
 import TitleSection from '../components/TitleSection'
-import AboutSection from '../components/AboutSection'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -15,12 +14,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Nav />
         <Background />
-        <div id='sections' className='overflow-y-scroll overflow-x-hidden h-[fit-content] w-full'>
-          <TitleSection />
-          <AboutSection />
-        </div>
+        <TitleSection />
+        <Nav />
       </main>
       <Footer />
     </div>
