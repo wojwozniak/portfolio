@@ -14,6 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/drei": "^9.37.0",
     "@react-three/fiber": "^8.8.10",
+    "@smakss/react-scroll-direction": "^1.0.4",
     "@types/three": "^0.144.0",
     "fontawesome": "^5.6.3",
     "next": "12.3.1",
