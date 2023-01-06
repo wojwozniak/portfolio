@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <section id="about" className="h-screen snap-start">
+    <section id="about" className="h-[200vh] snap-start">
       <div className="relative top-40 left-20 flex flex-col gap-3 w-[80vw]">
         <h1 className="text-3xl">
         Hi, I'm Wojciech!
