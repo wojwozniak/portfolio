@@ -6,7 +6,7 @@ import { Stars, useCamera, OrbitControls } from '@react-three/drei';
 
 const Background = () => {
     return (
-      <div id="canvas-container" className="h-full w-full fixed">
+      <div id="canvas-container" className="h-full w-full absolute">
         <Canvas>
             <Suspense fallback={null}>
                     <Stars radius={300} depth={100} count={5000} factor={9} saturation={.02} fade={true} />

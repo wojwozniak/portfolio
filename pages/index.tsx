@@ -4,6 +4,7 @@ import Background from '../components/Background'
 import TitleSection from '../components/TitleSection'
 import Footer from '../components/Footer'
 import AboutSection from '../components/AboutSection'
+import Sidebar from '../components/Sidebar'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <Sidebar />
         <Background />
         <TitleSection />
         <Nav />
