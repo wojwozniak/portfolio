@@ -16,10 +16,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Sidebar />
+        <>
+          <Nav />
+          <Sidebar />
+        </>
+        
         <Background />
         <TitleSection />
-        <Nav />
+        
         <AboutSection />
       </main>
       <Footer />

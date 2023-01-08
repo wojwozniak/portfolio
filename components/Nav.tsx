@@ -6,7 +6,6 @@ const Nav = () => {
   const menuItems = [
     'start',
     'about',
-    'skills',
     'work',
     'contact'
   ];
@@ -30,26 +29,25 @@ const Nav = () => {
   }, [scrollDir]);
 
   function updateNav(scrollY:number) {
-    console.log(scrollY," ", scrollDir);
-    if (scrollY < window.innerHeight-20) {
-        ref.current.style.position = 'relative';
-        ref.current.style.transition = "0s";
-        ref.current.style.backgroundColor = "transparent";
+    ref.current.style.transition = "all .5s ease-in-out";
+    ref.current.style.position = 'fixed';
+    console.log(scrollY," ", scrollDir);  
+    if (scrollDir == 'down') {
+      ref.current.style.top = '-60px';
     } else {
-      ref.current.style.transition = "top .3s";
-      ref.current.style.backgroundColor = "black";
-      if (scrollDir == 'down') {
-        ref.current.style.position = 'fixed';
-        ref.current.style.top = '-50px';
-      } else {
-        ref.current.style.position = 'fixed';
-        ref.current.style.top = '0';
-      }
+      ref.current.style.top = '0';
+    }
+    if (scrollY != 0 && scrollDir == 'up') {
+      ref.current.style.boxShadow = '0 10px 30px black';
+      ref.current.style.backgroundColor = 'black';
+    } else {
+      ref.current.style.boxShadow = '0 0 0 transparent';
+      ref.current.style.backgroundColor = 'transparent';
     }
   }
   
   return (
-    <nav className="w-full text-3xl text-right z-10 top-[-50px]" ref={ref}>
+    <nav className="w-full text-3xl text-right h-[60px] z-10 fixed flex justify-end items-center pr-[20px]" ref={ref}>
       <ul className='flex justify-center gap-5 flex-row'>
         {
           menuItems.map((item, index) => 

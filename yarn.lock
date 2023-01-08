@@ -1654,6 +1654,18 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
+"lottie-react@^2.3.1":
+  "integrity" "sha512-8cxd6XZZtECT6LoAhCftRdYrEpHxiouvB5EPiYA+TtCG5LHNYAdMS9IVIHcxKtWnpo7x16QfCLj1XLXZpaN81A=="
+  "resolved" "https://registry.npmjs.org/lottie-react/-/lottie-react-2.3.1.tgz"
+  "version" "2.3.1"
+  dependencies:
+    "lottie-web" "^5.9.4"
+
+"lottie-web@^5.9.4":
+  "integrity" "sha512-u17bVNf/vA3oK9Wkyb1Vpo83WUIEQwaT0GeEN0qcvaExizyJ/RjmcbjSDj0CnwQCtpGqTgYhqprCC7cTWuXMNw=="
+  "resolved" "https://registry.npmjs.org/lottie-web/-/lottie-web-5.10.1.tgz"
+  "version" "5.10.1"
+
 "lru-cache@^6.0.0":
   "integrity" "sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA=="
   "resolved" "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz"
@@ -2256,7 +2268,7 @@
   dependencies:
     "prop-types" "^15.6.0"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16.13", "react-dom@>=18.0", "react-dom@18.2.0":
+"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16.13", "react-dom@>=18.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"

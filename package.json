@@ -17,6 +17,7 @@
     "@smakss/react-scroll-direction": "^1.0.4",
     "@types/three": "^0.144.0",
     "fontawesome": "^5.6.3",
+    "lottie-react": "^2.3.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
