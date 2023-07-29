@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
+import './navbar.css'
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -35,27 +36,27 @@ const Navbar = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link">
-                Home
+                HOME
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                About
+                ABOUT
               </a>
             </li>
             <li className="nav__item">
               <a href="#works" className="nav__link">
-                Works
+                WORKS
               </a>
             </li>
             <li className="nav__item">
               <a href="#experience" className="nav__link">
-                Experience
+                EXPERIENCE
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                Contact
+                CONTACT
               </a>
             </li>
           </ul>
