@@ -33,13 +33,15 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
             </a>
           </li>
           <li className="nav__item">
-            <a href="#experience" className="nav__link">
-              EXPERIENCE
+            <a href="#contact" className="nav__link">
+              CONTACT
             </a>
           </li>
         </ul>
-        <a className='contact__text'><p>Contact</p></a>
-        <LangMenu language={language} setLanguage={setLanguage} />
+        <div className='nav__right'>
+          <a className='contact__text'><p>Resume</p></a>
+          <LangMenu language={language} setLanguage={setLanguage} />
+        </div>
         <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>
           {active
             ? <AiOutlineClose size="30px" />
