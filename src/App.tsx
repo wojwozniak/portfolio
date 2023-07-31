@@ -1,12 +1,12 @@
 import Navbar from "./components/nav/Navbar"
-import Start from "./components/sections/Start"
+import Sections from "./components/sections/Sections"
 
 function App() {
 
   return (
     <div className='App'>
         <Navbar />
-        <Start />
+        <Sections />
     </div>
   )
 }
