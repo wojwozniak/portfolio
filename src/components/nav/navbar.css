@@ -39,6 +39,7 @@
   z-index: 10;
   position: absolute;
   left: 20px;
+  top: 10px;
 }
 
 .nav__button {
@@ -93,6 +94,18 @@
     position: relative;
     top: 0;
     right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav__flag {
+    height: 40px;
+    width: auto;
+  }
+
+  .nav__chevron__down {
+    height: 20px;
+    width: auto;
   }
   
   .nav__main {

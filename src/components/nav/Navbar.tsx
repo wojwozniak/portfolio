@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { AiOutlineClose, AiOutlineDown, AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import './navbar.css'
+import LangMenu from './LangMenu';
 
-const Navbar = () => {
+const Navbar = ({language, setLanguage} : {language: string, setLanguage: React.Dispatch<React.SetStateAction<string>>} ) => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -42,10 +43,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className='nav__lang'>
-          <p>flag</p>
-          <AiOutlineDown size="10px" />
-        </div>
+        <LangMenu language={language} setLanguage={setLanguage} />
         <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>
           { active
           ? <AiOutlineClose size="30px" />
