@@ -1,10 +1,11 @@
 import Start from './Start'
+import './sections.css'
 
 const Sections = () => {
   return (
-    <>
-        <Start />
-    </>
+    <div className='sections'>
+      <Start />
+    </div>
   )
 }
 
