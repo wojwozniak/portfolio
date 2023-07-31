@@ -87,13 +87,41 @@
 }
 
 .nav__flag {
-  height: 40px;
-  width: auto;
+  height: 20px;
+  width: 30px;
 }
 
-.nav__chevron__down {
-  height: 20px;
-  width: auto;
+.nav__chevron {
+  height: 19px;
+  width: 11px;
+}
+
+.nav__lang__menu {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  font-size: 20px;
+  background-color: #000D15;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav__lang__menu__item {
+  width: 100px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  border-top: 1px dashed white;
+}
+
+.nav__lang__menu__item:first-child {
+  border-top: none;
 }
 
 /* ### Medium screen and up ### */
@@ -111,6 +139,10 @@
     position: relative;
     left: 0;
     width: 150px;
+  }
+
+  .active {
+    height: auto;
   }
   
   .nav__button {

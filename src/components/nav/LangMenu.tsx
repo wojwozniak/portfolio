@@ -1,4 +1,4 @@
-import { AiOutlineDown } from 'react-icons/ai'
+import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
 import { US, PL, DE } from 'country-flag-icons/react/3x2'
 import { useEffect, useState } from 'react'
 
@@ -22,17 +22,32 @@ const Flag = ({ currentLang } : { currentLang: string }) => {
 const LangMenu = ({ language, setLanguage } : { language: string, setLanguage: React.Dispatch<React.SetStateAction<string>> }) => {
 
     const [currentLang, setCurrentLang] = useState(language);
+    const [openLangMenu, setOpenLangMenu] = useState(false);
+
+    const updateOpenLangMenu = () => {
+        setOpenLangMenu(!openLangMenu);
+    }
 
     useEffect(() => {
-        
       setLanguage(currentLang);
     }, [currentLang]);
     
 
     return (
-        <div className='nav__lang'>
+        <div className='nav__lang' onClick={updateOpenLangMenu}>
             <Flag currentLang={currentLang} />
-            <AiOutlineDown size="10px" className='nav__chevron__down' />
+
+            {openLangMenu && 
+            <ul className='nav__lang__menu'>
+                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('EN')}>English</li>
+                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('PL')}>Polski</li>
+                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('DE')}>Deutsch</li>
+            </ul>
+            }
+
+            { openLangMenu
+            ? <AiOutlineDown size="10px" className='nav__chevron' />
+            : <AiOutlineUp size="10px" className='nav__chevron' /> }
         </div>
     )
 }
