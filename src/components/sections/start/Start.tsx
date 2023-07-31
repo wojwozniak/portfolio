@@ -1,10 +1,10 @@
-import React from 'react'
+import Avatar from './Avatar'
 import './start.css'
 
 const Start = () => {
   return (
     <section className='start'>
-        Start
+      <Avatar />
     </section>
   )
 }

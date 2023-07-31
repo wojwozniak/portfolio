@@ -1,4 +1,4 @@
-import Start from './Start'
+import Start from './start/Start'
 import './sections.css'
 
 const Sections = () => {

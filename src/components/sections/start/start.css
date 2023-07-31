@@ -1,0 +1,25 @@
+/* ### Start section ### */
+
+.start {
+  height: 100vh;
+  width: 100%;
+  background-color: #000D15;
+  display: flex;
+  justify-content: center;
+}
+
+.start__img {
+  height: 80vh;
+  margin-top: 20vh;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.start__img img {
+  max-height: 100%;
+  max-width: 90%;
+  object-fit: contain;
+  z-index: 2;
+}
