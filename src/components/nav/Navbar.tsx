@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import './navbar.css'
 import LangMenu from './LangMenu';
@@ -44,9 +44,29 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
     },
   };
 
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      setPrevScrollPosition(currentPosition);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPosition]);
+
   return (
     <>
-      <nav className={active ? 'nav active' : 'nav'} >
+      <nav 
+        style={{
+          background: prevScrollPosition === 0 ? 'transparent' : '#000D15'
+        }}
+        className={active ? 'nav active' : 'nav'} 
+      >
         <div className="nav__logo">
           <h2>LOGO HERE</h2>
         </div>
