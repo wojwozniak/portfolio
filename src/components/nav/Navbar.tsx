@@ -23,7 +23,6 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
 
   useEffect(() => {
     if(langMenuOpen) {
-      console.log("test");
       setActive(false);
     }
   }, [langMenuOpen]);
