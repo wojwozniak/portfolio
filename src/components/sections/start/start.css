@@ -2,10 +2,12 @@
 
 .start {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden !important;
   background-color: #000D15;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .start__img {
@@ -15,6 +17,8 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: end;
+  position: absolute;
 }
 
 .start__img img {
@@ -25,15 +29,15 @@
 }
 
 .highlight-blue {
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   background: radial-gradient(circle, #01A1FF 0%, #00A1EE 0%, transparent 70%);
   position: absolute;
   opacity: 1;
   z-index: 1;
-  right: 30px;
-  bottom: -250px;
+  right: -200px;
+  bottom: 120px;
 }
 
 .highlight-green {
@@ -44,6 +48,6 @@
   position: absolute;
   opacity: 1;
   z-index: 1;
-  top: -100px;
+  top: -150px;
   left: -250px;
 }
