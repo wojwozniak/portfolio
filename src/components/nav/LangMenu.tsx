@@ -19,18 +19,33 @@ const Flag = ({ currentLang } : { currentLang: string }) => {
     return flagToRender;
 };
 
-const LangMenu = ({ language, setLanguage } : { language: string, setLanguage: React.Dispatch<React.SetStateAction<string>> }) => {
+type LangMenuProps = {
+    language: string;
+    setLanguage: React.Dispatch<React.SetStateAction<string>>;
+    passLangMenuState: React.Dispatch<React.SetStateAction<boolean>>;
+    navBarOpen: boolean;
+};
+
+const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen } : LangMenuProps) => {
 
     const [currentLang, setCurrentLang] = useState(language);
     const [openLangMenu, setOpenLangMenu] = useState(false);
 
     const updateOpenLangMenu = () => {
+        passLangMenuState(!openLangMenu);
         setOpenLangMenu(!openLangMenu);
     }
 
     useEffect(() => {
       setLanguage(currentLang);
     }, [currentLang]);
+
+    useEffect(() => {
+        if(navBarOpen) {
+            setOpenLangMenu(false);
+            passLangMenuState(false);
+        }
+    }, [navBarOpen]);
     
 
     return (

@@ -15,10 +15,18 @@ type Translations = {
 
 const Navbar = ({ language, setLanguage }: { language: string, setLanguage: React.Dispatch<React.SetStateAction<string>> }) => {
   const [active, setActive] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
 
   const handleClick = () => {
     setActive(!active);
   };
+
+  useEffect(() => {
+    if(langMenuOpen) {
+      console.log("test");
+      setActive(false);
+    }
+  }, [langMenuOpen]);
 
   const translationsList: { [key: string]: Translations } = {
     PL: {
@@ -96,7 +104,7 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
           <a className='contact__text'>
             <p>{translationsList[language]?.Resume}</p>
           </a>
-          <LangMenu language={language} setLanguage={setLanguage} />
+          <LangMenu language={language} setLanguage={setLanguage} passLangMenuState={setLangMenuOpen} navBarOpen={active} />
         </div>
         <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>
           {active
