@@ -8,7 +8,8 @@
   left: 0;
   height: 70px;
   width: 100vw;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   transition: height .3s ease-in-out, background 0.5s ease;
   z-index: 10;
@@ -72,18 +73,19 @@
   z-index: 100;
   position: absolute;
   right: 55px;
-  top: 10px;
-  background-color: transparent;
+  top: 0px;
   border: none;
   outline: none;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-radius: 10px 10px 0px 0px;
   gap: 5px;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -112,31 +114,11 @@
 }
 
 .nav__lang__menu {
-  position: absolute;
-  top: 60px;
+  position: absolute !important;
+  top: 70px;
   right: 0px;
-  font-size: 20px;
-  background-color: #000D15;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.nav__lang__menu__item {
-  width: 100px;
-  padding-top: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  border-top: 1px dashed white;
-}
-
-.nav__lang__menu__item:first-child {
-  border-top: none;
+  background-color: black !important;
+  border-radius: 10px 0px 10px 10px;
 }
 
 /* ### Medium screen and up ### */

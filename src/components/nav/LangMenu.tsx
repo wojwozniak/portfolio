@@ -1,14 +1,15 @@
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
 import { US, PL, DE } from 'country-flag-icons/react/3x2'
 import { useEffect, useState } from 'react'
+import { List, ListItem, ListItemText } from '@mui/material';
 
 type FlagMapType = {
     [key: string]: React.ReactElement;
 };
 
-const Flag = ({ currentLang } : { currentLang: string }) => {
+const Flag = ({ currentLang }: { currentLang: string }) => {
 
-    const flagMap:FlagMapType = {
+    const flagMap: FlagMapType = {
         EN: <US title="United States of America" className="nav__flag" />,
         PL: <PL title="Poland" className="nav__flag" />,
         DE: <DE title="Germany" className="nav__flag" />
@@ -26,7 +27,7 @@ type LangMenuProps = {
     navBarOpen: boolean;
 };
 
-const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen } : LangMenuProps) => {
+const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen }: LangMenuProps) => {
 
     const [currentLang, setCurrentLang] = useState(language);
     const [openLangMenu, setOpenLangMenu] = useState(false);
@@ -37,32 +38,42 @@ const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen } : Lan
     }
 
     useEffect(() => {
-      setLanguage(currentLang);
+        setLanguage(currentLang);
     }, [currentLang]);
 
     useEffect(() => {
-        if(navBarOpen) {
+        if (navBarOpen) {
             setOpenLangMenu(false);
             passLangMenuState(false);
         }
     }, [navBarOpen]);
-    
+
+    const emptyStyle = {};
+    const listStyle = {
+        backgroundColor: 'black'
+    }
 
     return (
-        <div className='nav__lang' onClick={updateOpenLangMenu}>
+        <div className='nav__lang' onClick={updateOpenLangMenu} style={openLangMenu ? listStyle : emptyStyle}>
             <Flag currentLang={currentLang} />
 
-            {openLangMenu && 
-            <ul className='nav__lang__menu'>
-                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('EN')}>English</li>
-                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('PL')}>Polski</li>
-                <li className='nav__lang__menu__item' onClick={() => setCurrentLang('DE')}>Deutsch</li>
-            </ul>
+            {openLangMenu &&
+                <List className="nav__lang__menu">
+                    <ListItem className="" onClick={() => setCurrentLang('EN')}>
+                        <ListItemText primary="English" />
+                    </ListItem>
+                    <ListItem className="" onClick={() => setCurrentLang('PL')}>
+                        <ListItemText primary="Polski" />
+                    </ListItem>
+                    <ListItem className="" onClick={() => setCurrentLang('DE')}>
+                        <ListItemText primary="Deutsch" />
+                    </ListItem>
+                </List>
             }
 
-            { openLangMenu
-            ? <AiOutlineDown size="10px" className='nav__chevron' />
-            : <AiOutlineUp size="10px" className='nav__chevron' /> }
+            {openLangMenu
+                ? <AiOutlineDown size="10px" className='nav__chevron' />
+                : <AiOutlineUp size="10px" className='nav__chevron' />}
         </div>
     )
 }
