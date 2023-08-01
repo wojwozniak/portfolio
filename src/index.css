@@ -18,3 +18,9 @@ a {
   width: 50px;
   display: flex;
 }
+
+#root {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}

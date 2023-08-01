@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   padding: 10px;
   display: flex;
   transition: height .3s ease-in-out;
@@ -47,6 +47,10 @@
   position: absolute;
   left: 20px;
   top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
 }
 
 .nav__button {
@@ -143,7 +147,7 @@
   }
 
   .nav__logo {
-    position: relative;
+    position: static;
     left: 0;
     width: 150px;
   }
