@@ -63,3 +63,9 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.tjs-sphere {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}

@@ -1,5 +1,6 @@
 import Avatar from './Avatar'
 import './start.css'
+import TechSphere from './TechSphere'
 
 const Start = () => {
   return (
@@ -9,6 +10,7 @@ const Start = () => {
           <br /><span className="lightblue"> Wojciech Woźniak</span>
         </h1>
       </div>
+      <TechSphere />
       <Avatar />
       <div className='highlight-blue' />
       <div className='highlight-green' />
