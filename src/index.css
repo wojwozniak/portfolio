@@ -30,7 +30,7 @@ a {
   color: #01A1FF;
 }
 
-.highlight-green {
+.highlight-green-big {
   height: 600px;
   width: 600px;
   border-radius: 50%;
@@ -40,7 +40,7 @@ a {
   z-index: 1;
 }
 
-.highlight-blue {
+.highlight-blue-medium {
   height: 400px;
   width: 400px;
   border-radius: 50%;
