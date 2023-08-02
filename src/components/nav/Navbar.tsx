@@ -77,7 +77,7 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
         <div className="nav__logo">
           <h2>LOGO HERE</h2>
         </div>
-        <ul className={active ? 'nav__main active' : 'nav__main'}>
+        <ul id='nav__main' className={active ? 'nav__main active' : 'nav__main'}>
           <li className="nav__item">
             <a href="#home" className="nav__link">
               {translationsList[language]?.HOME}

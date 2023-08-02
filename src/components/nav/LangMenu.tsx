@@ -50,7 +50,8 @@ const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen }: Lang
 
     const emptyStyle = {};
     const listStyle = {
-        backgroundColor: 'black'
+        backgroundColor: '#000D15',
+        opacity: '1'
     }
 
     return (
