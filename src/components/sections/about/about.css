@@ -1,7 +1,7 @@
 .about {
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: #1E1E1E;
     z-index: 2;
     position: relative;
 }
