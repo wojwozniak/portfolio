@@ -2,3 +2,17 @@
     height: 100vh;
     width: 100vw;
 }
+
+.projects .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects__title {
+    font-weight: bold;
+    font-size: 38px;
+    z-index: 8;
+}

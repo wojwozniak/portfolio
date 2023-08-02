@@ -2,9 +2,11 @@ import './projects.css'
 
 const Projects = () => {
   return (
-    <div className='projects'>
-        Projects
-    </div>
+    <section className='projects'>
+        <div className='content'>
+            <h2 id="projects__title">Recent Projects</h2>
+        </div>
+    </section>
   )
 }
 
