@@ -48,14 +48,8 @@ const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen }: Lang
         }
     }, [navBarOpen]);
 
-    const emptyStyle = {};
-    const listStyle = {
-        backgroundColor: '#000D15',
-        opacity: '1'
-    }
-
     return (
-        <div className='nav__lang' onClick={updateOpenLangMenu} style={openLangMenu ? listStyle : emptyStyle}>
+        <div className='nav__lang' onClick={updateOpenLangMenu}>
             <Flag currentLang={currentLang} />
 
             {openLangMenu &&

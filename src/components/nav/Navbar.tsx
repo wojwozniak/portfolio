@@ -70,7 +70,7 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
     <>
       <nav 
         style={{
-          background: prevScrollPosition === 0 ? 'transparent' : '#000D15'
+          background: prevScrollPosition !== 0 || langMenuOpen ? '#000D15' : 'transparent'
         }}
         className={active ? 'nav active' : 'nav'} 
       >
