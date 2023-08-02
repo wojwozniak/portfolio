@@ -55,13 +55,18 @@
 .start .content {
   z-index: 5;
   margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
 }
 
 .start h1 {
   font-weight: bold;
   font-size: 48px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.start p {
+  margin-top: 20px;
 }
 
 .tjs-sphere {

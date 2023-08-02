@@ -8,6 +8,7 @@ const Start = () => {
         <h1 className='white'>Hey There, I'm
           <br /><span className="lightblue"> Wojciech Woźniak </span>
         </h1>
+        <p>Unlocking the potential of code through innovation and creativity.</p>
       </div>
       <Avatar />
       <div className='highlight-blue' />
