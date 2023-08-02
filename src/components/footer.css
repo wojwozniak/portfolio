@@ -1,5 +1,48 @@
 .footer {
-    height: 30vh;
-    background-color: red;
+    height: fit-content;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 7;
+    background-color: #000D15;
+}
+
+.footer .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer__links path {
+    color: #01A1FF;
+}
+
+#footer__logo {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#footer__copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+#highlight--6 {
+    left: -350px;
 }
