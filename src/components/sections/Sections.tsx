@@ -2,6 +2,7 @@ import Start from './start/Start'
 import './sections.css'
 import About from './about/About'
 import Projects from './projects/Projects'
+import Contact from './contact/Contact'
 
 const Sections = () => {
   return (
@@ -9,6 +10,7 @@ const Sections = () => {
       <Start />
       <About />
       <Projects />
+      <Contact />
     </div>
   )
 }
