@@ -29,3 +29,23 @@ a {
 .lightblue {
   color: #01A1FF;
 }
+
+.highlight-green {
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #286F6C 0%, #1E4E4B 0%, transparent 70%);
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.highlight-blue {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #01A1FF 0%, #00A1EE 0%, transparent 70%);
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}

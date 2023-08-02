@@ -11,8 +11,8 @@ const Start = () => {
         <p id="start__subtitle">Unlocking the potential of code through innovation and creativity.</p>
       </div>
       <Avatar />
-      <div className='highlight-blue' />
-      <div className='highlight-green' />
+      <div id="highlight--1" className='highlight-blue' />
+      <div id="highlight--2" className='highlight-green' />
     </section>
   )
 }
