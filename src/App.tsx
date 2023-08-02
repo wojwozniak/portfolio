@@ -11,7 +11,7 @@ function App() {
     <div className='App'>
         <Navbar language={language} setLanguage={setLanguage} />
         <Sections />
-        <Footer />
+        <Footer language={language} />
     </div>
   )
 }
