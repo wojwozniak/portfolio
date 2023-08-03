@@ -5,10 +5,15 @@ type FlagMapType = {
 };
 
 const Flag = ({ currentLang }: { currentLang: string }) => {
+    const flagStyle = {
+        height: '20px',
+        width: '30px',
+    }
+
     const flagMap: FlagMapType = {
-        en: <US title="United States of America" className="nav__flag" />,
-        pl: <PL title="Poland" className="nav__flag" />,
-        de: <DE title="Germany" className="nav__flag" />
+        en: <US title="United States of America" style={flagStyle} />,
+        pl: <PL title="Poland" style={flagStyle} />,
+        de: <DE title="Germany" style={flagStyle} />
     };
 
     const flagToRender = flagMap[currentLang] || null;
