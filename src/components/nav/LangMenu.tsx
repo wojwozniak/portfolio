@@ -1,46 +1,32 @@
-import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
-import { US, PL, DE } from 'country-flag-icons/react/3x2'
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Flag from './Flag';
 import { List, ListItem, ListItemText } from '@mui/material';
+import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
-type FlagMapType = {
-    [key: string]: React.ReactElement;
-};
-
-const Flag = ({ currentLang }: { currentLang: string }) => {
-
-    const flagMap: FlagMapType = {
-        EN: <US title="United States of America" className="nav__flag" />,
-        PL: <PL title="Poland" className="nav__flag" />,
-        DE: <DE title="Germany" className="nav__flag" />
-    };
-
-    const flagToRender = flagMap[currentLang] || null;
-
-    return flagToRender;
-};
 
 type LangMenuProps = {
-    language: string;
-    setLanguage: React.Dispatch<React.SetStateAction<string>>;
     passLangMenuState: React.Dispatch<React.SetStateAction<boolean>>;
     navBarOpen: boolean;
 };
 
-const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen }: LangMenuProps) => {
+const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
 
-    const [currentLang, setCurrentLang] = useState(language);
+    /* Translation */
+    const { i18n } = useTranslation();
+    const setCurrentLang = (language: string) => {
+        i18n.changeLanguage(language);
+    };
+    const currentLang = i18n.language;
+
+    /* Language menu state */
     const [openLangMenu, setOpenLangMenu] = useState(false);
-
     const updateOpenLangMenu = () => {
         passLangMenuState(!openLangMenu);
         setOpenLangMenu(!openLangMenu);
-    }
+    };
 
-    useEffect(() => {
-        setLanguage(currentLang);
-    }, [currentLang]);
-
+    /* Close language menu when opening navbar */
     useEffect(() => {
         if (navBarOpen) {
             setOpenLangMenu(false);
@@ -54,13 +40,13 @@ const LangMenu = ({ language, setLanguage, passLangMenuState, navBarOpen }: Lang
 
             {openLangMenu &&
                 <List className="nav__lang__menu">
-                    <ListItem className="" onClick={() => setCurrentLang('EN')}>
+                    <ListItem className="" onClick={() => setCurrentLang('en')}>
                         <ListItemText primary="English" />
                     </ListItem>
-                    <ListItem className="" onClick={() => setCurrentLang('PL')}>
+                    <ListItem className="" onClick={() => setCurrentLang('pl')}>
                         <ListItemText primary="Polski" />
                     </ListItem>
-                    <ListItem className="" onClick={() => setCurrentLang('DE')}>
+                    <ListItem className="" onClick={() => setCurrentLang('de')}>
                         <ListItemText primary="Deutsch" />
                     </ListItem>
                 </List>

@@ -1,58 +1,30 @@
-import { useEffect, useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import './navbar.css'
+import { useEffect, useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { useTranslation } from 'react-i18next';
 import LangMenu from './LangMenu';
-
-type Translations = {
-  HOME: string;
-  ABOUT: string;
-  WORKS: string;
-  CONTACT: string;
-  Resume: string;
-};
+import './navbar.css'
 
 
+const Navbar = () => {
+  /* Translation */
+  const { t } = useTranslation();
 
-const Navbar = ({ language, setLanguage }: { language: string, setLanguage: React.Dispatch<React.SetStateAction<string>> }) => {
+  /* Navbar for small screens */
   const [active, setActive] = useState(false);
-  const [langMenuOpen, setLangMenuOpen] = useState(false);
-
   const handleClick = () => {
     setActive(!active);
   };
 
+  /* Language menu and disabling other menu when opening */
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   useEffect(() => {
-    if(langMenuOpen) {
+    if (langMenuOpen) {
       setActive(false);
     }
   }, [langMenuOpen]);
 
-  const translationsList: { [key: string]: Translations } = {
-    PL: {
-      HOME: 'STRONA GŁÓWNA',
-      ABOUT: 'O MNIE',
-      WORKS: 'PROJEKTY',
-      CONTACT: 'KONTAKT',
-      Resume: 'CV',
-    },
-    EN: {
-      HOME: 'HOME',
-      ABOUT: 'ABOUT',
-      WORKS: 'WORKS',
-      CONTACT: 'CONTACT',
-      Resume: 'Resume',
-    },
-    DE: {
-      HOME: 'STARTSEITE',
-      ABOUT: 'ÜBER MICH',
-      WORKS: 'ARBEITEN',
-      CONTACT: 'KONTAKT',
-      Resume: 'Lebenslauf',
-    },
-  };
-
+  /* Navbar background change on scroll */
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentPosition = window.scrollY;
@@ -66,53 +38,52 @@ const Navbar = ({ language, setLanguage }: { language: string, setLanguage: Reac
     };
   }, [prevScrollPosition]);
 
+
   return (
     <>
-      <nav 
+      <nav
         style={{
-          background: prevScrollPosition !== 0 || langMenuOpen ? '#000D15' : 'transparent'
+          background: prevScrollPosition !== 0 || langMenuOpen ? '#000D15' : 'transparent',
         }}
-        className={active ? 'nav active' : 'nav'} 
+        className={active ? 'nav active' : 'nav'}
       >
         <div className="nav__logo">
           <h2>LOGO HERE</h2>
         </div>
-        <ul id='nav__main' className={active ? 'nav__main active' : 'nav__main'}>
+        <ul id="nav__main" className={active ? 'nav__main active' : 'nav__main'}>
           <li className="nav__item">
             <a href="#home" className="nav__link">
-              {translationsList[language]?.HOME}
+              {t('HOME')}
             </a>
           </li>
           <li className="nav__item">
             <a href="#about" className="nav__link">
-              {translationsList[language]?.ABOUT}
+              {t('ABOUT')}
             </a>
           </li>
           <li className="nav__item">
             <a href="#works" className="nav__link">
-              {translationsList[language]?.WORKS}
+              {t('WORKS')}
             </a>
           </li>
           <li className="nav__item">
             <a href="#contact" className="nav__link">
-              {translationsList[language]?.CONTACT}
+              {t('CONTACT')}
             </a>
           </li>
         </ul>
-        <div className='nav__right'>
-          <a className='contact__text'>
-            <p>{translationsList[language]?.Resume}</p>
+        <div className="nav__right">
+          <a className="contact__text">
+            <p>{t('Resume')}</p>
           </a>
-          <LangMenu language={language} setLanguage={setLanguage} passLangMenuState={setLangMenuOpen} navBarOpen={active} />
+          <LangMenu passLangMenuState={setLangMenuOpen} navBarOpen={active} />
         </div>
         <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>
-          {active
-            ? <AiOutlineClose size="30px" />
-            : <AiOutlineMenu size="30px" />}
+          {active ? <AiOutlineClose size="30px" /> : <AiOutlineMenu size="30px" />}
         </button>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

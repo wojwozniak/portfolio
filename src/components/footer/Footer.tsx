@@ -1,24 +1,10 @@
 import { AiFillGithub } from 'react-icons/ai';
 import './footer.css'
 import { BsLinkedin, BsTwitter } from 'react-icons/bs'
+import { useTranslation } from 'react-i18next';
 
-type Translations = {
-    SUB: string;
-};
-
-const Footer = ({ language }: { language: string }) => {
-
-    const translationsList: { [key: string]: Translations } = {
-        PL: {
-            SUB: 'Autor: wojwozniak, 2023'
-        },
-        EN: {
-            SUB: 'Created by wojwozniak, 2023'
-        },
-        DE: {
-            SUB: 'Autor: wojwozniak, 2023'
-        },
-    };
+const Footer = () => {
+    const { t } = useTranslation();
 
     return (
         <div className='footer'>
@@ -37,7 +23,7 @@ const Footer = ({ language }: { language: string }) => {
                 </div>
             </div>
             <div className='horizontal__line' />
-            <p id="footer__copyright">{translationsList[language]?.SUB}</p>
+            <p id="footer__copyright">{t('SUB')}</p>
             <div id="highlight--6" className='highlight-green-big' />
         </div>
     )
