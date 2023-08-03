@@ -18,14 +18,11 @@ i18n.use(Backend).use(LanguageDetector).init({
 });
 
 function App() {
-  const handleLanguageChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
-
+  
   return (
     <div className='App'>
       <I18nextProvider i18n={i18n}>
-      <LanguageSelectorOverlay onLanguageChange={handleLanguageChange} />
+      <LanguageSelectorOverlay />
         <Navbar />
         <Sections />
         <Footer />

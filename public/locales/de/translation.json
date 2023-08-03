@@ -4,5 +4,7 @@
     "WORKS": "ARBEITEN",
     "CONTACT": "KONTAKT",
     "Resume": "Lebenslauf",
-    "SUB": "Autor: wojwozniak, 2023"
+    "SUB": "Autor: wojwozniak, 2023",
+    "greeting": "Willkommen!",
+    "languageSelectionPrompt": "Bitte wählen Sie Ihre Sprache:"
 }

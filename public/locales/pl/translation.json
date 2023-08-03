@@ -4,5 +4,7 @@
     "WORKS": "PROJEKTY",
     "CONTACT": "KONTAKT",
     "Resume": "CV",
-    "SUB": "Autor: wojwozniak, 2023"
+    "SUB": "Autor: wojwozniak, 2023",
+    "greeting": "Witaj!",
+    "languageSelectionPrompt": "Wybierz swój język:"
 }

@@ -4,5 +4,7 @@
     "WORKS": "WORKS",
     "CONTACT": "CONTACT",
     "Resume": "Resume",
-    "SUB": "Created by wojwozniak, 2023"
+    "SUB": "Created by wojwozniak, 2023",
+    "greeting": "Welcome!",
+    "languageSelectionPrompt": "Please select your language:"
 }
