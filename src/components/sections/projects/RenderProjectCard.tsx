@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Modal } from '@mui/material';
 import { FaExternalLinkAlt, FaGithub, FaTimes } from 'react-icons/fa';
-import './renderprojectcard.css';
 import { useTranslation } from 'react-i18next';
+import './renderprojectcard.css';
 
 type ProjectCardProps = {
     title: string;
@@ -13,6 +13,8 @@ type ProjectCardProps = {
 };
 
 const RenderProjectCard = (props: ProjectCardProps) => {
+    const { t } = useTranslation();
+    
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleCardClick = () => {
@@ -22,8 +24,6 @@ const RenderProjectCard = (props: ProjectCardProps) => {
     const handleCloseModal = () => {
         setIsModalOpen(false);
     };
-
-    const { t } = useTranslation();
 
     const handleImageClick = () => {
         window.open(props.link, '_blank');
