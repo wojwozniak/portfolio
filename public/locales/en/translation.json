@@ -8,5 +8,6 @@
     "greeting": "Welcome!",
     "languageSelectionPrompt": "Please select your language:",
     "recentProjects": "Recent Projects",
-    "survivalScoutWebsite": "Survival Scout Website"
+    "survivalScoutWebsite": "Survival Scout Website",
+    "visitWebsite": "Visit Website"
 }
