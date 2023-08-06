@@ -12,23 +12,74 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
 }
 
 .big__circle {
-    height: 100vw;
-    width: 100vw;
+    height: 140vw;
+    width: 140vw;
     background-color: #000D15;
     border-radius: 50%;
     z-index: 4;
     position: absolute;
-    top: 25vw;
+    top: 45vw;
+    left: -20vw;
     box-shadow: 0px 0px 50px 5px #01A1FF;
 }
 
+@media screen and (min-width: 460px) {
+    .big__circle {
+        top: 37vw;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .big__circle {
+        top: 32vw;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    .big__circle {
+        top: 25vw;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    .big__circle {
+        top: 18vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .big__circle {
+        top: 14vw;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .big__circle {
+        top: 10vw;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .big__circle {
+        top: 6vw;
+    }
+}
+
+@media screen and (min-width: 1675px) {
+    .big__circle {
+        top: 2vw;
+    }
+}
+
+
 #contact__title {
     font-weight: bold;
-    font-size: 38px;
-    margin-top: 160px;
+    font-size: 32px;
+    margin-top: 150px;
     z-index: 8;
 }
 
@@ -40,12 +91,13 @@
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    max-width: 420px;
 }
 
 .contact__button {
     background-color: #01A1FF;
     color: #000D15;
-    height: 65px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;

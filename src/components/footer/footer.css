@@ -53,3 +53,17 @@
 #highlight--6 {
     left: -350px;
 }
+
+.horizontal__line {
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 660px) {
+    .horizontal__line {
+        width: 95%;
+    }
+}
