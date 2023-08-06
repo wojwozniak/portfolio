@@ -31,10 +31,15 @@ const RenderProjectCard = (props: ProjectCardProps) => {
 
     return (
         <>
-            <div className='projects__card' onClick={handleCardClick}>
+            <div 
+                className='projects__card' 
+                onClick={handleCardClick}
+            >
                 <div className='projects__card__image'>
                     <img src={props.image} alt='project' />
-                    <h1 className='projects__card__title'>{props.title}</h1>
+                    <h1 className='projects__card__title'>
+                        {props.title}
+                    </h1>
                 </div>
             </div>
             <Modal
@@ -50,7 +55,9 @@ const RenderProjectCard = (props: ProjectCardProps) => {
                         </button>
                     </div>
                     <div className='modal__inside'>
-                        <h2 id='modal__title'>{props.title}</h2>
+                        <h2 id='modal__title'>
+                            {props.title}
+                        </h2>
                         <img 
                             className='projects__card__image--full' 
                             src={props.image} 
