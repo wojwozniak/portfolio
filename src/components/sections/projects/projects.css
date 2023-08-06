@@ -16,3 +16,66 @@
     font-size: 38px;
     z-index: 8;
 }
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 768px) {
+    .projects__container {
+        flex-direction: row;
+    }
+}
+
+.projects__card__image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border: 0px solid #01A1FF;
+    position: relative;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projects__card__title {
+    z-index: 9;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects__card__image:hover {
+    border: 4px solid #01A1FF;
+}
+
+
+.projects__card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.projects__card__image:hover img {
+    transform: scale(1.1);
+    filter: brightness(.6);
+}
+
+.projects__card__image:hover .projects__card__title {
+    opacity: 1 !important;
+    filter: brightness(1);
+}
