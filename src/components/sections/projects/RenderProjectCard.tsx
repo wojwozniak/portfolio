@@ -25,6 +25,10 @@ const RenderProjectCard = (props: ProjectCardProps) => {
 
     const { t } = useTranslation();
 
+    const handleImageClick = () => {
+        window.open(props.link, '_blank');
+    };
+
     return (
         <>
             <div className='projects__card' onClick={handleCardClick}>
@@ -47,7 +51,12 @@ const RenderProjectCard = (props: ProjectCardProps) => {
                     </div>
                     <div className='modal__inside'>
                         <h2 id='modal__title'>{props.title}</h2>
-                        <img className='projects__card__image--full' src={props.image} alt='project' />
+                        <img 
+                            className='projects__card__image--full' 
+                            src={props.image} 
+                            alt='project'
+                            onClick={handleImageClick} 
+                        />
                         <p id='modal__description'>{props.description}</p>
                         <div className='modal__links'>
                             <a

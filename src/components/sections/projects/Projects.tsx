@@ -11,7 +11,7 @@ const Projects = () => {
       <div className='content'>
         <h2 id="projects__title">{t('recentProjects')}</h2>
         <div className='projects__container'>
-          <RenderProjectCard title={t("survivalScoutWebsite")} description={'exampledescription'} image={Pustynna} link={''} githubLink={''} />
+          <RenderProjectCard title={t("survivalScoutWebsite")} description={'exampledescription'} image={Pustynna} link={'https://pustynnaburza.dabrowagornicza.zhp.pl/'} githubLink={'https://github.com/wojwozniak/wp-pustynnaburza'} />
         </div>
       </div>
     </section>
