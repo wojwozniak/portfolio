@@ -45,6 +45,12 @@
     font-weight: 500;
 }
 
+#footer__logo--subtext {
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+}
+
 #footer__copyright {
     margin-top: 7px;
     font-size: 12px;
