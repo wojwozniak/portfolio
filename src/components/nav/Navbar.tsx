@@ -73,9 +73,6 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="nav__right">
-          <a className="contact__text">
-            <p>{t('Resume')}</p>
-          </a>
           <LangMenu passLangMenuState={setLangMenuOpen} navBarOpen={active} />
         </div>
         <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>

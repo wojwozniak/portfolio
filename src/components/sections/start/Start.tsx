@@ -1,4 +1,3 @@
-import Avatar from './Avatar'
 import './start.css'
 
 const Start = () => {
@@ -10,9 +9,6 @@ const Start = () => {
         </h1>
         <p id="start__subtitle">Unlocking the potential of code through innovation and creativity.</p>
       </div>
-      <Avatar />
-      <div id="highlight--1" className='highlight-blue-medium' />
-      <div id="highlight--2" className='highlight-green-big' />
     </section>
   )
 }
