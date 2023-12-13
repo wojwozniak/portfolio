@@ -12,6 +12,8 @@
 body, html {
   background-color: #000D15;
   height: 300vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {

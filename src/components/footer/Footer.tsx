@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='content'>
-                <h2 id="footer__logo">LOGO HERE</h2>
+                <h2 id="footer__logo">Contact me</h2>
                 <div className='footer__links'>
                     <a href="#" target="_blank">
                         <BsTwitter size="32px" />
