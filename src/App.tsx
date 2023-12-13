@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Start from './components/sections/Start';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
+import "./components/sections/sections.css";
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',

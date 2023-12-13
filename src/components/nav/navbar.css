@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 50px;
+  height: 70px;
   width: 100vw;
   padding-left: 10px;
   padding-right: 10px;
@@ -29,6 +29,15 @@
 
 #nav__main {
   background-color: transparent !important;
+}
+
+#under-nav {
+  background-color: #000D15;
+  opacity: 1;
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  top: 0px;
 }
 
 .nav__link {
