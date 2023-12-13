@@ -61,7 +61,7 @@
   height: 50px;
   z-index: 20;
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 20px;
   font-size: 10px;
   display: flex;
@@ -73,7 +73,7 @@
 .nav__button {
   z-index: 20;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 30px;
   background-color: transparent;
   border: none;
@@ -84,7 +84,7 @@
 .nav__lang {
   z-index: 100;
   position: absolute;
-  right: 55px;
+  right: 65px;
   top: 10px;
   border: none;
   outline: none;

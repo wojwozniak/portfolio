@@ -150,7 +150,8 @@
     background-color: #000D15;
     padding-top: 50px;
     width: 100%;
-    height: 90vh;
+    height: fit-content;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,4 +166,12 @@
     z-index: 10;
     margin-top: 20px;
     text-align: center;
+}
+
+.experience {
+    height: 60vh;
+    width: 100vw;
+    background-color: #010D1F;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }

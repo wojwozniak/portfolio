@@ -8,6 +8,7 @@ import Start from './components/sections/Start';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import "./components/sections/sections.css";
+import Experience from './components/sections/Experience';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -28,6 +29,7 @@ function App() {
         <div className='sections'>
           <Start />
           <About />
+          <Experience />
           <Projects />
         </div>
         <Footer />
