@@ -3,8 +3,10 @@ import { I18nextProvider } from 'react-i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Navbar from "./components/nav/Navbar"
-import Sections from "./components/sections/Sections"
 import Footer from "./components/footer/Footer";
+import Start from './components/sections/Start';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -22,7 +24,11 @@ function App() {
     <div className='App'>
       <I18nextProvider i18n={i18n}>
         <Navbar />
-        <Sections />
+        <div className='sections'>
+          <Start />
+          <About />
+          <Projects />
+        </div>
         <Footer />
       </I18nextProvider>
     </div>

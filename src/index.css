@@ -9,8 +9,9 @@
   opacity: 1;
 }
 
-body, html {
-  background-color: #000D15;
+body,
+html {
+  background-color: transparent;
   height: 300vh;
   width: 100vw;
   overflow-x: hidden;
@@ -26,6 +27,21 @@ a {
   width: 100vw;
   height: auto;
   overflow: hidden;
+}
+
+.sections {
+  margin-top: 70px;
+  gap: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  z-index: 5;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
 }
 
 .lightblue {

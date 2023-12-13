@@ -10,24 +10,6 @@
   position: relative;
 }
 
-.start__img {
-  height: 80vh;
-  margin-top: 20vh;
-  width: 80%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  position: absolute;
-}
-
-.start__img img {
-  max-height: 100%;
-  max-width: 90%;
-  object-fit: contain;
-  z-index: 2;
-}
-
 #highlight--1 {
   right: -200px;
   bottom: 220px;
@@ -40,15 +22,9 @@
 
 #start__title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 36px;
 }
 
 #start__subtitle {
   margin-top: 20px;
-}
-
-.tjs-sphere {
-  position: absolute;
-  top: 20%;
-  right: 10%;
 }

@@ -1,6 +1,6 @@
 import './projects.css'
-import Pustynna from '../../../assets/images/projects/screen-1.png'
-import Zlota from '../../../assets/images/projects/screen-2.png'
+import Pustynna from '../../assets/images/projects/screen-1.png'
+import Zlota from '../../assets/images/projects/screen-2.png'
 import { useTranslation } from 'react-i18next'
 import RenderProjectCard from './RenderProjectCard';
 

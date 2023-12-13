@@ -9,6 +9,7 @@ const Start = () => {
         </h1>
         <p id="start__subtitle">Unlocking the potential of code through innovation and creativity.</p>
       </div>
+      <div id="highlight--2" className='highlight-green-big' />
     </section>
   )
 }
