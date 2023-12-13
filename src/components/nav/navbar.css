@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 100px;
   width: 100vw;
   padding-left: 10px;
   padding-right: 10px;
@@ -21,7 +21,7 @@
   overflow: hidden;
   list-style: none;
   text-decoration: none;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 #nav__main {
@@ -32,7 +32,7 @@
   background-color: #010D1F;
   opacity: 1;
   width: 100vw;
-  height: 70px;
+  height: 100px;
   position: absolute;
   top: 0px;
 }
@@ -62,7 +62,7 @@
   z-index: 20;
   position: absolute;
   left: 20px;
-  top: 10px;
+  top: 20px;
   font-size: 10px;
   display: flex;
   flex-direction: row;
@@ -74,7 +74,7 @@
   z-index: 20;
   position: absolute;
   right: 10px;
-  top: 20px;
+  top: 30px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -85,7 +85,7 @@
   z-index: 100;
   position: absolute;
   right: 55px;
-  top: 0px;
+  top: 10px;
   border: none;
   outline: none;
   color: white;
@@ -146,14 +146,10 @@
     width: 150px;
   }
 
-  .active {
-    height: auto;
-  }
-  
   .nav__button {
     display: none;
   }
-  
+
   .nav__main {
     height: fit-content;
     overflow: visible;
@@ -188,7 +184,6 @@
 
   .nav__lang {
     position: relative;
-    top: 0;
     right: 0;
   }
 

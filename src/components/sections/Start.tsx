@@ -2,7 +2,7 @@ const Start = () => {
   return (
     <>
       <div id="under-nav" />
-      <section className='start'>
+      <section id="start" className='start'>
         <div className='content'>
           <h2 id="start__title--up">
             Hello!

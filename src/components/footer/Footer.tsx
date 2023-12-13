@@ -31,7 +31,7 @@ const Footer = () => {
     ]
 
     return (
-        <div className='footer'>
+        <div id="contact" className='footer'>
             <div className='content'>
                 <h2 id="footer__logo">Contact</h2>
                 <p id="footer__logo--subtext">Have any questions? Just want to say hi? Contact me!</p>

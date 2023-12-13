@@ -7,9 +7,10 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section className='projects'>
+    <section id="projects" className='projects'>
       <div className='content'>
         <h2 id="projects__title">{t('recentProjects')}</h2>
+        <p id="projects__subtitle">Some of my recent projects</p>
         <div className='projects__container'>
           <RenderProjectCard 
             title={t("scoutWebsite")} 
