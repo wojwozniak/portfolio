@@ -4,12 +4,14 @@ const Start = () => {
       <div id="under-nav" />
       <section className='start'>
         <div className='content'>
-          <h1 id='start__title' className='white'>Hey There, I'm
-            <br /><span className="lightblue"> Wojciech Woźniak </span>
+          <h2 id="start__title--up">
+            Hello!
+          </h2>
+          <h1 id='start__title' className='white'>My name is <br/>
+            <span className="lightblue"> Wojciech Woźniak </span>
           </h1>
-          <p id="start__subtitle">Full stack developer</p>
+          <p id="start__subtitle">I am fullstack developer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus nibh, sollicitudin vel porttitor vitae, mollis eget felis. Nunc pharetra pretium justo in suscipit. Mauris tempor purus interdum, vestibulum tortor ac, efficitur ipsum. </p>
         </div>
-        <div id="highlight--2" className='highlight-green-big' />
       </section>
     </>
   )

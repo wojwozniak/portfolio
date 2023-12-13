@@ -10,13 +10,10 @@
   width: 100vw;
   padding-left: 10px;
   padding-right: 10px;
-  display: flex;
   transition: height .3s ease-in-out, background 0.5s ease;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: top;
-  border-bottom: 2px solid black;
 }
 
 .nav__main {
@@ -32,7 +29,7 @@
 }
 
 #under-nav {
-  background-color: #000D15;
+  background-color: #010D1F;
   opacity: 1;
   width: 100vw;
   height: 70px;
