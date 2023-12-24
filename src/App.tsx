@@ -4,8 +4,8 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
-import Start from './components/01Start';
-import About from './components/sections/About';
+import Start from './components/Section01Start';
+import About from './components/Section02About';
 import Projects from './components/sections/Projects';
 import "./components/sections/sections.css";
 import Experience from './components/sections/Experience';
