@@ -6,9 +6,8 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 import Start from './components/Section01Start';
 import About from './components/Section02About';
-import Projects from './components/sections/Projects';
+import Projects from './components/Projects';
 import "./components/sections/sections.css";
-import Experience from './components/sections/Experience';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -30,7 +29,6 @@ function App() {
           <Start />
           <div id="bg-photo" className='w-full h-[35vh]' />
           <About />
-          <Experience />
           <Projects />
         </div>
         <Footer />

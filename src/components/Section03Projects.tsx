@@ -1,7 +1,7 @@
 import Pustynna from '../../assets/images/projects/screen-1.png'
 import Zlota from '../../assets/images/projects/screen-2.png'
 import { useTranslation } from 'react-i18next'
-import RenderProjectCard from './RenderProjectCard';
+import RenderProjectCard from './sections/RenderProjectCard';
 
 const Projects = () => {
   const { t } = useTranslation();
