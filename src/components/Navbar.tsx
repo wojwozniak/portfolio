@@ -68,7 +68,7 @@ const Navbar = () => {
 
       <ul className={
         active
-          ? '!bg-transparent md:h-auto md:overflow-visible overflow-hidden md:flex mt-14 md:flex-row md:w-4/5 md:mt-0 md:justify-center md:items-center md:gap-10 active'
+          ? '!bg-background md:h-auto md:overflow-visible overflow-hidden md:flex mt-14 md:flex-row md:w-4/5 md:mt-0 md:justify-center md:items-center md:gap-10 active'
           : '!bg-transparent overflow-hidden mt-25 h-0 md:h-auto md:overflow-visible md:flex md:flex-row md:w-full md:mt-0 md:justify-center md:items-center md:gap-4'
       }>
         {menuItems.map((item, index) => {

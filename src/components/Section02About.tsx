@@ -5,7 +5,7 @@ const About = () => {
         <h2 className="text-4xl">
           About me
         </h2>
-        <p className="font-light z-10 mt-5 text-center">
+        <p className="font-light z-5 mt-5 text-center">
           As a passionate full stack developer, I thrive on crafting dynamic web solutions, bridging the gap between front-end aesthetics and back-end functionality, and constantly seeking new ways to elevate user experiences through clean code and cutting-edge technologies. My dedication to lifelong learning drives me to stay at the forefront of industry trends, ensuring that each project I undertake is not just a mere accomplishment but a testament to the power of innovation and collaboration. Let's embark on a journey to build transformative digital experiences together.
         </p>
       </div>
