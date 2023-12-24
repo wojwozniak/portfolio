@@ -6,8 +6,8 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 import Start from './components/Section01Start';
 import About from './components/Section02About';
-import Projects from './components/Projects';
-import "./components/sections/sections.css";
+import Projects from './components/Section03Projects';
+import "./components/sections.css";
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
