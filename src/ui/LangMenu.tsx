@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Flag from '../Flag';
+import Flag from './Flag';
 import { List, ListItem, ListItemText } from '@mui/material';
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
