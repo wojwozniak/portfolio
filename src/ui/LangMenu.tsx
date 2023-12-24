@@ -11,8 +11,6 @@ type LangMenuProps = {
 };
 
 const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
-
-    /* Translation */
     const { i18n } = useTranslation();
     const setCurrentLang = (language: string) => {
         i18n.changeLanguage(language);
@@ -34,6 +32,12 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
         }
     }, [navBarOpen]);
 
+    const menuItems = [
+        { currentLang: 'en', name: 'English' },
+        { currentLang: 'pl', name: 'Polski' },
+        { currentLang: 'de', name: 'Deutsch' },
+    ];
+
     return (
         <div onClick={updateOpenLangMenu}
             className='z-100 fixed right-14 md:right-2 top-5 border-none outline-none text-white flex flex-col items-end pr-2 rounded-t-lg cursor-pointer'>
@@ -46,16 +50,14 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
             </div>
 
             {openLangMenu &&
-                <List className="bg-background-light top-5 border rounded-bl rounded-br" >
-                    <ListItem className="" onClick={() => setCurrentLang('en')}>
-                        <ListItemText primary="English" />
-                    </ListItem>
-                    <ListItem className="" onClick={() => setCurrentLang('pl')}>
-                        <ListItemText primary="Polski" />
-                    </ListItem>
-                    <ListItem className="" onClick={() => setCurrentLang('de')}>
-                        <ListItemText primary="Deutsch" />
-                    </ListItem>
+                <List className="bg-background-light top-5 left-4 right-0 border rounded-bl rounded-br" >
+                    {menuItems.map((item, index) => {
+                        return (
+                            <ListItem key={index} className="font-semibold rounded transition duration-300 ease-in-out hover:shadow-md" onClick={() => setCurrentLang(item.currentLang)}>
+                                <ListItemText primary={item.name} className='transition ease-in-out duration-300 hover:underline' />
+                            </ListItem>
+                        )
+                    })}
                 </List>
             }
 
