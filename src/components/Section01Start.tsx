@@ -2,7 +2,7 @@ const Start = () => {
   return <section id="home"
     className='h-screen w-screen bg-background-light flex justify-center relative'>
     <div className='z-5 mt-[100px] font-medium w-full pl-14 pr-14'>
-      <h2 className="mt-5 text-xl font-medium">
+      <h2 className="mt-14 text-xl font-medium">
         Hello!
       </h2>
       <h1 className='color-white font-bold text-2xl'>My name is <br />

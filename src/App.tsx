@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Start from './components/Section01Start';
 import About from './components/Section02About';
 import Projects from './components/Section03Projects';
-import "./components/sections.css";
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -25,10 +24,13 @@ function App() {
     <div className='App'>
       <I18nextProvider i18n={i18n}>
         <Navbar />
-        <div>
+        <div className='flex flex-col'>
           <Start />
-          <div id="bg-photo" className='w-full h-[35vh]' />
+          <div id="bg-photo" className='w-full h-[45vh]' />
           <About />
+          <div className='h-[1px] w-full bg-background flex flex-row justify-center'>
+            <div className='h-[1px] w-11/12 bg-white opacity-50' />
+          </div>
           <Projects />
         </div>
         <Footer />

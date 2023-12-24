@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <div id="contact"
             className='h-auto w-screen flex flex-col items-center justify-center relative overflow-hidden z-7 bg-background'>
-            <div className='p-7.5 flex flex-col items-center justify-center pb-2.5'>
-                <h2 className='text-2xl'>
+            <div className='pl-9 pr-9 pt-10 flex flex-col items-center justify-center pb-4'>
+                <h2 className='text-4xl'>
                     Contact
                 </h2>
                 <p className="text-sm font-thin text-center">
