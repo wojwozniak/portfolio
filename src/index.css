@@ -9,12 +9,14 @@
   box-sizing: border-box;
   color: #F8F8F8;
   opacity: 1;
+  scroll-behavior: smooth;
 }
 
 body,
 html {
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html {
