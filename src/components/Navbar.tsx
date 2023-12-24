@@ -57,8 +57,10 @@ const Navbar = () => {
       className={
         active
           ? 'bg-background fixed top-0 left-0 h-25 w-screen transition-all z-10 flex flex-col h-full opacity-100 !pt-2.5 !pb-2.5'
-          : 'h-[60px] opacity-95 fixed top-0 left-0 h-2 w-screen pl-2.5 pr-2.5 transition-all z-10 flex flex-row justify-between items-center'
-      }>
+          : (langMenuOpen
+            ? 'h-[60px] opacity-95 fixed top-0 left-0 h-2 w-screen pl-2.5 pr-2.5 transition-all z-10 flex flex-row justify-between items-center border-b border-white'
+            : 'h-[60px] opacity-95 fixed top-0 left-0 h-2 w-screen pl-2.5 pr-2.5 transition-all z-10 flex flex-row justify-between items-center border-b border-transparent'
+          )}>
 
       <h2 className="fixed top-[18px] left-3">
         wojwozniak

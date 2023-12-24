@@ -50,7 +50,7 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
             </div>
 
             {openLangMenu &&
-                <List className="bg-background-light top-5 left-4 right-0 border rounded-bl rounded-br" >
+                <List className="bg-background-light top-5 left-[15px] right-0 border rounded-bl rounded-br border-t-0" >
                     {menuItems.map((item, index) => {
                         return (
                             <ListItem key={index} className="font-semibold rounded transition duration-300 ease-in-out hover:shadow-md" onClick={() => setCurrentLang(item.currentLang)}>
