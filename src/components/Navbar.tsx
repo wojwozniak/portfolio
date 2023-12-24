@@ -75,7 +75,7 @@ const Navbar = () => {
           return <li key={index}
             className="border-[1px] border-t-white md:border-t-0 border-b-0 border-l-0 border-r-0 ml-3 mr-7 md:ml-0 md:mr-7">
             <a href={item.link}
-              className="no-underline text-base w-full flex hover:underline flex-row justify-start ml-1 items-center"
+              className="no-underline text-base w-full flex hover:underline h-[50px] flex-row justify-start ml-1 items-center"
             >
               {t(item.name)}
             </a>

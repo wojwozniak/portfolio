@@ -39,7 +39,7 @@ const Logos = ({ type }: { type: string }) => {
                         <a href={link.link}
                             target='_blank'
                             rel='noreferrer'
-                            className='flex flex-row items-center justify-center fill-blue-500 hover:fill-white transition ease-in-out duration-300'>
+                            className='flex flex-row items-center justify-center fill-blue-500 hover:fill-white transition ease-in-out duration-300 h-[50px] w-[50px]'>
                             {link.icon}
                         </a>
                     </div>

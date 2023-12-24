@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ### General ### */
-
 * {
   font-family: "Quicksand", system-ui, sans-serif;
   padding: 0;
@@ -23,25 +21,6 @@ html {
   background-image: url("./assets/images/photo.jpg");
   background-attachment: fixed;
   background-position: center;
-}
-
-a {
-  height: 50px;
-  width: 50px;
-  display: flex;
-}
-
-#root {
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
-}
-
-.sections {
-  margin-top: 100px;
-  gap: 0px;
-  display: flex;
-  flex-direction: column;
 }
 
 .highlight-green-big {
