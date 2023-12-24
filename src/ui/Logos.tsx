@@ -2,7 +2,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BsLinkedin, BsTwitter } from 'react-icons/bs'
 import { IoIosMail } from "react-icons/io";
 
-const Logos = () => {
+const Logos = ({ type }: { type: string }) => {
     const links = [
         {
             name: 'Email',
@@ -27,11 +27,15 @@ const Logos = () => {
     ]
 
     return (
-        <div className='flex flex-row items-center gap-2.5 mt-7.5'>
+        <div className=
+            {type == "bottom-center"
+                ? `fixed mt-6 w-full z-100 bottom-5 flex flex-row gap-5 justify-center`
+                : 'flex flex-row items-center gap-2.5 mt-7.5'
+            }>
             {links.map((link, index) => {
                 return (
                     <div key={index}
-                        className='mt-6'>
+                        className="mt-6">
                         <a href={link.link}
                             target='_blank'
                             rel='noreferrer'
