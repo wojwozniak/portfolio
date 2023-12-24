@@ -26,7 +26,7 @@ function App() {
     <div className='App'>
       <I18nextProvider i18n={i18n}>
         <Navbar />
-        <div className='sections'>
+        <div>
           <Start />
           <About />
           <Experience />
