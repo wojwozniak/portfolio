@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
 import LangMenu from './LangMenu';
-import './navbar.css'
-
 
 const Navbar = () => {
   /* Translation */
@@ -49,33 +47,51 @@ const Navbar = () => {
 
 
   return (
-    <>
-      <nav
-        style={{
-          background: prevScrollPosition !== 0 || langMenuOpen ? '#000D15' : 'transparent',
-        }}
-        className={active ? 'nav active' : 'nav'}
-      >
-        <div className="nav__logo">
-          <h2>LOGO HERE</h2>
-        </div>
+    <nav
+      style={{
+        background: prevScrollPosition !== 0 || langMenuOpen ? '#000D15' : 'transparent',
+      }}
+      className={
+        active
+          ? 'bg-background fixed top-0 left-0 h-25 w-screen transition-all z-10 flex flex-col h-full opacity-100 !pt-2.5 !pb-2.5'
+          : '!bg-red-500 h-[60px] opacity-95 fixed top-0 left-0 h-2 w-screen pl-2.5 pr-2.5 transition-all z-10 flex flex-row justify-between items-center'
+      }>
 
-        <ul id="nav__main" className={active ? 'nav__main active' : 'nav__main'}>
-          {menuItems.map((item, index) => {
-            return <li key={index} className="nav__item">
-              <a href={item.link} className="nav__link">
-                {t(item.name)}
-              </a>
-            </li>
-          })}
-        </ul>
+      <h2 className="fixed top-4 left-3">
+        wojwozniak
+      </h2>
 
-        <LangMenu passLangMenuState={setLangMenuOpen} navBarOpen={active} />
-        <button onClick={handleClick} className={`nav__button ${active ? 'fade-in-out' : ''}`}>
-          {active ? <AiOutlineClose size="30px" /> : <AiOutlineMenu size="30px" />}
-        </button>
-      </nav>
-    </>
+      <ul className={
+        active
+          ? '!bg-transparent md:h-auto md:overflow-visible md:flex md:flex-row md:w-4/5 md:mt-0 md:justify-center md:items-center md:gap-10 active'
+          : '!bg-transparent overflow-hidden mt-25 h-0 md:h-auto md:overflow-visible md:flex md:flex-row md:w-full md:mt-0 md:justify-center md:items-center md:gap-10'
+      }>
+        {menuItems.map((item, index) => {
+          return <li key={index} className="nav__item">
+            <a href={item.link}
+              className="no-underline text-base w-full flex flex-row justify-start ml-1 items-center"
+            >
+              {t(item.name)}
+            </a>
+          </li>
+        })}
+      </ul>
+
+      <LangMenu passLangMenuState={setLangMenuOpen} navBarOpen={active} />
+
+      <button onClick={handleClick}
+        className=
+        {`z-20 fixed right-3 top-4 bg-transparent border-none outline-none text-white md:hidden transition-all duration-500
+            ${active
+            ? 'fade-in-out'
+            : ''} `}>
+        {active
+          ? <AiOutlineClose size="30px" />
+          : <AiOutlineMenu size="30px" />
+        }
+      </button>
+
+    </nav>
   );
 };
 

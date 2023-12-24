@@ -35,11 +35,18 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
     }, [navBarOpen]);
 
     return (
-        <div className='nav__lang' onClick={updateOpenLangMenu}>
-            <Flag currentLang={currentLang} />
+        <div onClick={updateOpenLangMenu}
+            className='z-100 fixed right-14 md:right-2 top-5 border-none outline-none text-white flex flex-col items-end pr-2 rounded-t-lg cursor-pointer'>
+
+            <div className='flex flex-row gap-1.5'>
+                <Flag currentLang={currentLang} />
+                {openLangMenu
+                    ? <AiOutlineDown size="10px" className='h-5 w-3' />
+                    : <AiOutlineUp size="10px" className='h-5 w-3' />}
+            </div>
 
             {openLangMenu &&
-                <List className="nav__lang__menu">
+                <List className="bg-background-light top-5 border rounded-bl rounded-br" >
                     <ListItem className="" onClick={() => setCurrentLang('en')}>
                         <ListItemText primary="English" />
                     </ListItem>
@@ -52,9 +59,6 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
                 </List>
             }
 
-            {openLangMenu
-                ? <AiOutlineDown size="10px" className='nav__chevron' />
-                : <AiOutlineUp size="10px" className='nav__chevron' />}
         </div>
     )
 }
