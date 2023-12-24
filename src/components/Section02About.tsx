@@ -1,10 +1,14 @@
 const About = () => {
   return (
-    <section className='about'>
-        <div id="about" className='content'>
-          <h2 id="about__title">About me</h2>
-          <p id="about__text">As a passionate full stack developer, I thrive on crafting dynamic web solutions, bridging the gap between front-end aesthetics and back-end functionality, and constantly seeking new ways to elevate user experiences through clean code and cutting-edge technologies. My dedication to lifelong learning drives me to stay at the forefront of industry trends, ensuring that each project I undertake is not just a mere accomplishment but a testament to the power of innovation and collaboration. Let's embark on a journey to build transformative digital experiences together.</p>
-        </div>
+    <section id="about" className='w-screen bg-transparent z-2 relative pt-18'>
+      <div className='bg-background pt-10 w-full h-auto p-5 flex flex-col items-center pl-10 pr-10 pb-10'>
+        <h2 className="text-4xl">
+          About me
+        </h2>
+        <p className="font-light z-10 mt-5 text-center">
+          As a passionate full stack developer, I thrive on crafting dynamic web solutions, bridging the gap between front-end aesthetics and back-end functionality, and constantly seeking new ways to elevate user experiences through clean code and cutting-edge technologies. My dedication to lifelong learning drives me to stay at the forefront of industry trends, ensuring that each project I undertake is not just a mere accomplishment but a testament to the power of innovation and collaboration. Let's embark on a journey to build transformative digital experiences together.
+        </p>
+      </div>
     </section>
   )
 }
