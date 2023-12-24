@@ -20,31 +20,6 @@
     padding-bottom: 10px;
 }
 
-.footer__links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.footer__links a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer__links path {
-    color: #01A1FF;
-}
-
-#footer__logo {
-    font-size: 32px;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
 #footer__logo--subtext {
     font-size: 13px;
     font-weight: 200;
