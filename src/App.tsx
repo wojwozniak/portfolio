@@ -28,7 +28,7 @@ function App() {
         <Navbar />
         <div>
           <Start />
-          <div className='w-full h-[35vh]' />
+          <div id="bg-photo" className='w-full h-[35vh]' />
           <About />
           <Experience />
           <Projects />
