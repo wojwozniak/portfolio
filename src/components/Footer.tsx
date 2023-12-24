@@ -16,7 +16,7 @@ const Footer = () => {
                 </p>
                 <Logos type={''} />
             </div>
-            <div className='h-px w-11/12 bg-white opacity-50 mt-5' />
+            <div className='h-px w-11/12 bg-white opacity-50 mt-5 z-2' />
             <p className="mt-2 text-xs font-thin mb-2.5">{t('SUB')}</p>
             <div className='highlight-green-big left-[-350px]' />
         </div>

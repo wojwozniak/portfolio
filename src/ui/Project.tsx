@@ -6,7 +6,7 @@ const Project = ({ project }: { project: project }) => {
     const { t } = useTranslation();
 
     return (
-        <div className="relative bg-background-light text-white p-8 rounded-lg z-3 w-4/5 transition-all md:w-[98%] duration-300 ease-in-out border-4 border-transparent hover:border-blue-500 hover:border-4 hover:scale-[101%]">
+        <div className="relative bg-background-light text-white p-8 rounded-lg z-3 w-4/5 h-[250px] transition-all duration-300 ease-in-out border-4 border-transparent hover:border-blue-500 hover:border-4 hover:scale-[101%]">
             <div className="bg-background z-4 opacity-1 top-0 right-0 w-full h-full absolute md:w-3/5">
                 <img
                     src={project.image}

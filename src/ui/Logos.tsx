@@ -30,16 +30,16 @@ const Logos = ({ type }: { type: string }) => {
         <div className=
             {type == "bottom-center"
                 ? `fixed mt-6 w-full z-100 bottom-5 flex flex-row gap-5 justify-center`
-                : 'flex flex-row items-center gap-2.5 mt-7.5'
+                : 'flex flex-row items-center gap-2.5 mt-7.5 z-98'
             }>
             {links.map((link, index) => {
                 return (
                     <div key={index}
-                        className="mt-6">
+                        className="mt-6 z-99">
                         <a href={link.link}
                             target='_blank'
                             rel='noreferrer'
-                            className='flex flex-row items-center justify-center fill-blue-500 hover:fill-white transition ease-in-out duration-300 h-[50px] w-[50px]'>
+                            className='flex flex-row items-center justify-center fill-blue-500 hover:fill-white transition ease-in-out duration-300 z-100 h-[50px] w-[50px]'>
                             {link.icon}
                         </a>
                     </div>
