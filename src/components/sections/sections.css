@@ -1,14 +1,3 @@
-/* ### Start section ### */
-
-.start {
-    height: 100vh;
-    width: 100vw;
-    background-color: #010D1F;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
 #highlight--1 {
     right: -200px;
     bottom: 220px;
@@ -18,22 +7,6 @@
     top: -150px;
     left: -250px;
 }
-
-#start__title {
-    font-weight: bold;
-    font-size: 36px;
-}
-
-#start__title--up {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-#start__subtitle {
-    margin-top: 20px;
-}
-
 
 .projects {
     width: 100vw;
