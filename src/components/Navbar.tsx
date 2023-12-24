@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
-import LangMenu from '../../ui/LangMenu';
+import LangMenu from '../ui/LangMenu';
+import Logos from '../ui/Logos';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -79,6 +80,8 @@ const Navbar = () => {
           </li>
         })}
       </ul>
+
+      {active ? <Logos type="bottom-center" /> : ''}
 
       <LangMenu passLangMenuState={setLangMenuOpen} navBarOpen={active} />
 
