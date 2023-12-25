@@ -9,6 +9,8 @@ import About from './components/Section02About';
 import Experience from './components/Section03Experience';
 import Projects from './components/Section04Projects';
 import Separator from './ui/Separator';
+import { useEffect, useState } from 'react';
+import Overlay from './ui/Overlay';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -18,16 +20,21 @@ i18n.use(Backend).use(LanguageDetector).init({
   interpolation: {
     escapeValue: false,
   },
-  // Comment out for local development, leave for deploy on gh pages
   backend: {
     loadPath: '/portfolio-v2/locales/{{lng}}/{{ns}}.json',
   },
 });
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
 
   return (
     <div className='App'>
+      {loading && <Overlay />}
       <I18nextProvider i18n={i18n}>
         <Navbar />
         <div className='flex flex-col'>

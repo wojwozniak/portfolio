@@ -1,0 +1,38 @@
+@keyframes coolAnimation {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.8);
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: scale(1.4);
+    }
+}
+
+.animation-class {
+    animation: coolAnimation 3s ease-in-out forwards;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.background-animation-class {
+    animation: backgroundAnimation 3s ease-in-out forwards;
+}
