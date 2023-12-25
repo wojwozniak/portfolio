@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { MouseEvent, useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useTranslation } from 'react-i18next';
 import LangMenu from '../ui/LangMenu';
@@ -45,6 +45,19 @@ const Navbar = () => {
     { name: 'CONTACT', link: '#contact' },
   ]
 
+  const handleMenuClick = (event: MouseEvent<HTMLLIElement, globalThis.MouseEvent>, link: string) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(link);
+    if (targetElement) {
+      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: offsetTop - 60,
+        behavior: 'smooth'
+      });
+    }
+    if (active) setActive(false);
+  }
+
 
   return (
     <nav
@@ -53,8 +66,8 @@ const Navbar = () => {
           prevScrollPosition !== 0 || langMenuOpen || active
             ? '#000D15'
             : 'transparent',
-            borderBottom: prevScrollPosition !== 0 || langMenuOpen || active ? '1px solid #fff' : '1px solid transparent',
-            transition: 'all 0.3s ease-in-out',
+        borderBottom: prevScrollPosition !== 0 || langMenuOpen || active ? '1px solid #fff' : '1px solid transparent',
+        transition: 'all 0.3s ease-in-out',
       }}
       className={
         active
@@ -75,6 +88,7 @@ const Navbar = () => {
       }>
         {menuItems.map((item, index) => {
           return <li key={index}
+            onClick={(e) => handleMenuClick(e, item.link)}
             className="border-[1px] border-t-white md:border-t-0 border-b-0 border-l-0 border-r-0 ml-7 mr-11 md:ml-0 md:mr-11">
             <a href={item.link}
               className="no-underline text-l text-base w-full flex hover:underline h-[50px] flex-row justify-start ml-1 items-center"
