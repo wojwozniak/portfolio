@@ -22,7 +22,7 @@ const Footer = () => {
             <Logos type={''} />
             <div className="p-2" />
             <Separator />
-            <p className="mt-2 text-xs font-thin mb-2.5">{t('SUB')}</p>
+            <p className="mt-2 text-xs font-thin mb-2.5">wojwozniak, XII 2023</p>
         </div>
     )
 }
