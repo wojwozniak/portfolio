@@ -3,5 +3,8 @@
     "ABOUT" : "ABOUT ME",
     "EXPERIENCE" : "EXPERIENCE",
     "PROJECTS" : "PROJECTS",
-    "CONTACT" : "CONTACT"
+    "CONTACT" : "CONTACT",
+    "WELCOME" : "Hello, I am",
+    "START_UNDER" : "I am software engineer building innovative and efficient solutions for the web. Currently studying Computer Science at the University of Wrocław and working on hybrid ERP systems for",
+    "TELL_ME_MORE" : "Tell me more"
 }

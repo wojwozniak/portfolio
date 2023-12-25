@@ -1,7 +1,10 @@
 {
-    "HOME" : "START",
-    "ABOUT" : "O MNIE",
-    "EXPERIENCE" : "DOŚWIADCZENIE",
-    "PROJECTS" : "PROJEKTY",
-    "CONTACT" : "KONTAKT"
+    "HOME": "START",
+    "ABOUT": "O MNIE",
+    "EXPERIENCE": "DOŚWIADCZENIE",
+    "PROJECTS": "PROJEKTY",
+    "CONTACT": "KONTAKT",
+    "WELCOME": "Cześć, jestem",
+    "START_UNDER": "Jestem inżynerem oprogramowania, tworzę innowacyjne i wydajne rozwiązania siecowe. Obecnie studiuję Informatykę na Uniwersytecie Wrocławskim i pracuję nad hybrydowymi systemami ERP dla",
+    "TELL_ME_MORE" : "Zobacz więcej"
 }
