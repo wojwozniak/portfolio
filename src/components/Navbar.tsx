@@ -77,7 +77,7 @@ const Navbar = () => {
             : 'h-[60px] opacity-95 fixed top-0 left-0 h-2 w-screen pl-2.5 pr-2.5 transition-all z-10 flex flex-row justify-between items-center border-b border-transparent'
           )}>
 
-      <h2 className="fixed top-[18px] left-5 font-light text-[18px]">
+      <h2 className="fixed top-[18px] lg:top-[14px] left-5 font-light text-[18px]">
         wojwozniak
       </h2>
 
