@@ -18,6 +18,10 @@ i18n.use(Backend).use(LanguageDetector).init({
   interpolation: {
     escapeValue: false,
   },
+  // Comment out for local development, leave for deploy on gh pages
+  backend: {
+    loadPath: '/portfolio-v2/locales/{{lng}}/{{ns}}.json',
+  },
 });
 
 function App() {
