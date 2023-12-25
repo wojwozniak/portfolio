@@ -27,7 +27,7 @@ const Section03Experience = () => {
     ]
 
     return (
-        <section id="about" className='w-screen bg-transparent z-2 relative pt-18'>
+        <section id="experience" className='w-screen bg-transparent z-2 relative pt-18'>
             <div className='bg-background pt-10 w-full h-auto flex flex-col pl-14 pr-14 pb-20'>
                 <h2 className="text-4xl">
                     Experience
