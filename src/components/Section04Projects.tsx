@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className='w-screen pb-5 bg-background pt-10'>
-      <div className='p-7.5 flex flex-col justify-center z-5 w-full pl-8 pr-8'>
+      <div className='p-7.5 flex flex-col justify-center z-5 w-full pl-14 pr-14'>
         <h2 className="text-4xl">{t('recentProjects')}</h2>
         <div className='flex flex-col items-center justify-center flex-wrap mt-16 mb-16 gap-12 md:flex-row'>
           {projects.map((project, index) => (
