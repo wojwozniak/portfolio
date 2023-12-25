@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Logos from '../ui/Logos';
+import Separator from '../ui/Separator';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -7,16 +8,20 @@ const Footer = () => {
     return (
         <div id="contact"
             className='h-auto w-screen flex flex-col items-center justify-center relative overflow-hidden z-7 bg-background'>
-            <div className='pl-9 pr-9 pt-10 flex flex-col items-center justify-center pb-4'>
+            <div className='pl-9 pr-9 pt-10 flex flex-col w-full'>
                 <h2 className='text-4xl'>
                     Contact
                 </h2>
-                <p className="text-sm font-thin text-center">
-                    Have any questions? Just want to say hi? Contact me!
+                <p className="text-sm font-thin mt-4">
+                    Have any questions? Just want to say hi?
                 </p>
-                <Logos type={''} />
+                <p className="text-sm font-thin mt-1">
+                    Click one of the buttons below to do so!
+                </p>
             </div>
-            <div className='h-px w-11/12 bg-white opacity-50 mt-5 z-2' />
+            <Logos type={''} />
+            <div className="p-2" />
+            <Separator />
             <p className="mt-2 text-xs font-thin mb-2.5">{t('SUB')}</p>
         </div>
     )
