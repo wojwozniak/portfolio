@@ -1,7 +1,7 @@
 const Start = () => {
   return <section id="home"
     className='h-screen w-screen bg-background-light flex justify-center relative'>
-    <div className='z-5 mt-[100px] font-medium w-full pl-14 pr-14 border-b-2 border-white'>
+    <div className='z-5 mt-[100px] font-medium w-full pl-14 pr-14'>
       <h1 className='mt-14 color-white font-bold text-xl'>Hello, I am <br />
         <span className="text-bright-blue text-5xl">Wojciech Woźniak</span>
       </h1>
