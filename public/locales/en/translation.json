@@ -1,10 +1,15 @@
 {
-    "HOME" : "HOME",
-    "ABOUT" : "ABOUT ME",
-    "EXPERIENCE" : "EXPERIENCE",
-    "PROJECTS" : "PROJECTS",
-    "CONTACT" : "CONTACT",
-    "WELCOME" : "Hello, I am",
-    "START_UNDER" : "I am software engineer building innovative and efficient solutions for the web. Currently studying Computer Science at the University of Wrocław and working on hybrid ERP systems for",
-    "TELL_ME_MORE" : "Tell me more"
+    "HOME": "HOME",
+    "ABOUT": "ABOUT ME",
+    "EXPERIENCE": "EXPERIENCE",
+    "PROJECTS": "PROJECTS",
+    "CONTACT": "CONTACT",
+    "WELCOME": "Hello, I am",
+    "START_UNDER": "I am software engineer building innovative and efficient solutions for the web. Currently studying Computer Science at the University of Wrocław and working on hybrid ERP systems for",
+    "TELL_ME_MORE": "Tell me more",
+    "ABOUT_1": "Hello! I am Wojciech Woźniak. I am a software engineer specializing in web development.",
+    "ABOUT_2": "My professional journey started few years back, when I first stumbled upon basic HTML&CSS course. Soon after I started building my first websites.",
+    "ABOUT_3": "Since then I started studying Computer Science and have worked on many projects, both commercial and not.",
+    "ABOUT_4": "In free time I enjoy playing chess and hiking.",
+    "FAV_TECHS" : "Technologies I work most often with:"
 }
