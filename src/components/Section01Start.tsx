@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import AnimatedBackground from "../ui/three/AnimatedBackground";
 
 const Start = () => {
   const { t } = useTranslation();
@@ -25,6 +26,7 @@ const Start = () => {
         {t("TELL_ME_MORE")}
       </button>
     </div>
+    <AnimatedBackground />
   </section>
 }
 
