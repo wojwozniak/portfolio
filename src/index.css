@@ -1,33 +1,30 @@
-/* ### General ### */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   font-family: "Quicksand", system-ui, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  color: #F8F8F8;
   opacity: 1;
+  scroll-behavior: smooth;
 }
 
-body, html {
-  background-color: #000D15;
-  height: 300vh;
-}
-
-a {
-  height: 50px;
-  width: 50px;
-  display: flex;
-}
-
-#root {
+body,
+html {
   width: 100vw;
-  height: auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.lightblue {
-  color: #01A1FF;
+html {
+  background-image: url("./assets/images/photo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .highlight-green-big {

@@ -1,14 +1,10 @@
 {
-    "HOME": "STRONA GŁÓWNA",
+    "HOME": "START",
     "ABOUT": "O MNIE",
-    "WORKS": "PROJEKTY",
+    "EXPERIENCE": "DOŚWIADCZENIE",
+    "PROJECTS": "PROJEKTY",
     "CONTACT": "KONTAKT",
-    "Resume": "CV",
-    "SUB": "Autor: wojwozniak, 2023",
-    "greeting": "Witaj!",
-    "languageSelectionPrompt": "Wybierz swój język:",
-    "recentProjects": "Ostatnie projekty",
-    "survivalScoutWebsite": "Strona dla akcji ZHP Pustynna Burza",
-    "scoutWebsite": "Strona dla drużyny harcerskiej",
-    "visitWebsite": "Odwiedź stronę"
+    "WELCOME": "Cześć, jestem",
+    "START_UNDER": "Jestem inżynerem oprogramowania, tworzę innowacyjne i wydajne rozwiązania siecowe. Obecnie studiuję Informatykę na Uniwersytecie Wrocławskim i pracuję nad hybrydowymi systemami ERP dla",
+    "TELL_ME_MORE" : "Zobacz więcej"
 }
