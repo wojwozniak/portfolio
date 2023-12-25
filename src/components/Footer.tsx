@@ -1,10 +1,7 @@
-import { useTranslation } from 'react-i18next';
 import Logos from '../ui/Logos';
 import Separator from '../ui/Separator';
 
 const Footer = () => {
-    const { t } = useTranslation();
-
     return (
         <div id="contact"
             className='h-auto w-screen flex flex-col items-center justify-center relative overflow-hidden z-7 bg-background'>
