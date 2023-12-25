@@ -35,6 +35,7 @@ function App() {
           <Separator />
           <Projects />
         </div>
+        <Separator />
         <Footer />
       </I18nextProvider>
     </div>
@@ -42,3 +43,5 @@ function App() {
 }
 
 export default App
+
+/*         <div className='highlight-green-big left-[-350px]' /> */
