@@ -10,14 +10,14 @@ const Projects = () => {
   const projects: project[] = [
     {
       image: Zlota,
-      title: 'Złota  Ósemka',
+      title: 'Złota Ósemka Website',
       description: 'exampledescription',
       link: 'https://zlotaosemka.dabrowagornicza.zhp.pl/',
       githubLink: "https://github.com/wojwozniak/wp-zlotaosemka"
     },
     {
       image: Pustynna,
-      title: 'Pustynna Burza',
+      title: 'Pustynna Burza Website',
       description: 'exampledescription',
       link: 'https://pustynnaburza.dabrowagornicza.zhp.pl/',
       githubLink: "https://github.com/wojwozniak/wp-pustynnaburza"
