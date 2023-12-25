@@ -1,14 +1,7 @@
 {
-    "HOME": "HOME",
-    "ABOUT": "ABOUT",
-    "WORKS": "WORKS",
-    "CONTACT": "CONTACT",
-    "Resume": "Resume",
-    "SUB": "Created by wojwozniak, 2023",
-    "greeting": "Welcome!",
-    "languageSelectionPrompt": "Please select your language:",
-    "recentProjects": "Projects",
-    "survivalScoutWebsite": "Survival Scout Website",
-    "scoutWebsite": "Scout Website",
-    "visitWebsite": "Visit Website"
+    "HOME" : "HOME",
+    "ABOUT" : "ABOUT ME",
+    "EXPERIENCE" : "EXPERIENCE",
+    "PROJECTS" : "PROJECTS",
+    "CONTACT" : "CONTACT"
 }

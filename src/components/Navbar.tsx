@@ -38,11 +38,11 @@ const Navbar = () => {
 
 
   const menuItems = [
-    { name: 'HOME', link: '#home' },
-    { name: 'ABOUT', link: '#about' },
-    { name: 'EXPERIENCE', link: '#experience' },
-    { name: 'PROJECTS', link: '#projects' },
-    { name: 'CONTACT', link: '#contact' },
+    { name: t("HOME"), link: '#home' },
+    { name: t('ABOUT'), link: '#about' },
+    { name: t('EXPERIENCE'), link: '#experience' },
+    { name: t('PROJECTS'), link: '#projects' },
+    { name: t('CONTACT'), link: '#contact' },
   ]
 
   const handleMenuClick = (event: MouseEvent<HTMLLIElement, globalThis.MouseEvent>, link: string) => {
