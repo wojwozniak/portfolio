@@ -6,7 +6,8 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 import Start from './components/Section01Start';
 import About from './components/Section02About';
-import Projects from './components/Section03Projects';
+import Experience from './components/Section03Experience';
+import Projects from './components/Section04Projects';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -28,6 +29,7 @@ function App() {
           <Start />
           <div id="bg-photo" className='w-full h-[45vh]' />
           <About />
+          <Experience />
           <div className='h-[1px] w-full bg-background flex flex-row justify-center'>
             <div className='h-[1px] w-11/12 bg-white opacity-50' />
           </div>
