@@ -3,7 +3,7 @@ import { experience } from '../types/experience';
 
 const ExperienceBlock: React.FC<experience> = ({ duration, title, role, description, technologies }) => {
     return (
-        <div className="flex items-start py-4">
+        <div className="flex items-start py-4 w-full h-full">
             <div className="w-1/4 pr-4">
                 <span className="block text-right text-sm font-semibold text-gray-600">{duration}</span>
             </div>
