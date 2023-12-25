@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <div id="contact"
-            className='h-auto w-screen flex flex-col items-center justify-center relative overflow-hidden z-7 bg-background'>
+            className='h-auto w-screen flex flex-col items-center justify-center relative overflow-hidden z-7 bg-background-light'>
             <div className='pl-9 pr-9 pt-10 flex flex-col items-center justify-center pb-4'>
                 <h2 className='text-4xl'>
                     Contact
