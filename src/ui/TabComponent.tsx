@@ -3,7 +3,6 @@ import ExperienceBlock from "./ExperienceBlock"
 import Box from "@mui/material/Box"
 import Tabs from "@mui/material/Tabs"
 import Tab from "@mui/material/Tab"
-import Typography from "@mui/material/Typography";
 import { experience } from "../types/experience"
 
 interface TabPanelProps {
@@ -25,7 +24,7 @@ function CustomTabPanel(props: TabPanelProps) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    {children}
                 </Box>
             )}
         </div>
