@@ -83,13 +83,13 @@ const Navbar = () => {
 
       <ul className={
         active
-          ? '!bg-background md:h-auto md:overflow-visible overflow-hidden md:flex mt-[70px] md:flex-row md:w-4/5 md:mt-0 md:justify-center md:items-center md:gap-10 active'
-          : '!bg-transparent overflow-hidden mt-25 h-0 md:h-auto md:overflow-visible md:flex md:flex-row md:w-full md:mt-0 md:justify-center md:items-center md:gap-4'
+          ? '!bg-background lg:h-auto lg:overflow-visible overflow-hidden lg:flex mt-[70px] lg:flex-row lg:w-4/5 lg:mt-0 lg:justify-center lg:items-center lg:gap-10 active'
+          : '!bg-transparent overflow-hidden mt-25 h-0 lg:h-auto lg:overflow-visible lg:flex lg:flex-row lg:w-full lg:mt-0 lg:justify-center lg:items-center lg:gap-4'
       }>
         {menuItems.map((item, index) => {
           return <li key={index}
             onClick={(e) => handleMenuClick(e, item.link)}
-            className="border-[1px] border-t-white md:border-t-0 border-b-0 border-l-0 border-r-0 ml-7 mr-11 md:ml-0 md:mr-11">
+            className="border-[1px] border-t-white lg:border-t-0 border-b-0 border-l-0 border-r-0 ml-7 mr-11 lg:ml-0 lg:mr-11">
             <a href={item.link}
               className="no-underline text-l text-base w-full flex hover:underline h-[50px] flex-row justify-start ml-1 items-center"
             >
@@ -105,7 +105,7 @@ const Navbar = () => {
 
       <button onClick={handleClick}
         className=
-        {`z-20 fixed right-5 top-4 bg-transparent border-none outline-none text-white md:hidden transition-all duration-500
+        {`z-20 fixed right-5 top-4 bg-transparent border-none outline-none text-white lg:hidden transition-all duration-500
             ${active
             ? 'fade-in-out'
             : ''} `}>

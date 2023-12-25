@@ -40,7 +40,7 @@ const LangMenu = ({ passLangMenuState, navBarOpen }: LangMenuProps) => {
 
     return (
         <div onClick={updateOpenLangMenu}
-            className='z-100 fixed right-16 md:right-2 top-5 border-none outline-none text-white flex flex-col items-end pr-2 rounded-t-lg cursor-pointer'>
+            className='z-100 fixed right-16 lg:right-2 top-5 border-none outline-none text-white flex flex-col items-end pr-2 rounded-t-lg cursor-pointer'>
 
             <div className='flex flex-row gap-1.5'>
                 <Flag currentLang={currentLang} />
