@@ -34,15 +34,15 @@ const About = () => {
         <h3 className="z-5 mt-10 font-semibold text-xl">
           Technologies I work most often with:
         </h3>
-        <div className="grid grid-cols-3 gap-4 mt-5">
+        <ul className="grid grid-cols-3 gap-4 mt-5">
           {favTechs.map((tech, index) => {
             return (
-              <p key={index} className="font-light z-5">
+              <li key={index} className="font-light z-5">
                 {tech}
-              </p>
+              </li>
             )
           })}
-        </div>
+        </ul>
       </div>
     </section>
   )
