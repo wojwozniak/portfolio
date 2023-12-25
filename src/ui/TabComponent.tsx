@@ -35,7 +35,7 @@ function CustomTabPanel(props: TabPanelProps) {
 function a11yProps(index: number) {
     return {
         id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`
     };
 }
 
@@ -49,19 +49,22 @@ const TabComponent = ({ Experience }: { Experience: experience[] }) => {
 
     return (
         <div className="min-h-[300px] mt-6">
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Tabs value={value} onChange={handleChange} aria-label="tabs experience">
-                    {Experience.map((experience, index) => {
-                        return (
-                            <Tab key={index} label={experience.title} {...a11yProps(index)} />
-                        )
+            <Tabs value={value} onChange={handleChange} aria-label="tabs experience">
+                {Experience.map((experience, index) => {
+                    return (
+                        <Tab sx={{ color: '#fff' }}
+                            key={index}
+                            label={experience.title}
+                            {...a11yProps(index)} />
+                    )
 
-                    })}
-                </Tabs>
-            </Box>
+                })}
+            </Tabs>
             {Experience.map((experience, index) => {
                 return (
-                    <CustomTabPanel key={index} value={value} index={index}>
+                    <CustomTabPanel key={index}
+                        value={value}
+                        index={index}>
                         <ExperienceBlock title={experience.title}
                             duration={experience.duration}
                             role={experience.role}
