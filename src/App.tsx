@@ -8,6 +8,7 @@ import Start from './components/Section01Start';
 import About from './components/Section02About';
 import Experience from './components/Section03Experience';
 import Projects from './components/Section04Projects';
+import Separator from './ui/Separator';
 
 i18n.use(Backend).use(LanguageDetector).init({
   fallbackLng: 'en',
@@ -27,12 +28,11 @@ function App() {
         <Navbar />
         <div className='flex flex-col'>
           <Start />
-          <div id="bg-photo" className='w-full h-[45vh]' />
+          <Separator />
           <About />
+          <div id="bg-photo" className='w-full h-[45vh] border-b-2 border-white border-t-2' />
           <Experience />
-          <div className='h-[1px] w-full bg-background flex flex-row justify-center'>
-            <div className='h-[1px] w-11/12 bg-white opacity-50' />
-          </div>
+          <Separator />
           <Projects />
         </div>
         <Footer />
