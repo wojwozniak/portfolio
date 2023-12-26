@@ -21,7 +21,7 @@ i18n.use(Backend).use(LanguageDetector).init({
     escapeValue: false,
   },
   backend: {
-    loadPath: '/portfolio-v2/locales/{{lng}}/{{ns}}.json',
+    loadPath: 'locales/{{lng}}/{{ns}}.json',
   },
 });
 
